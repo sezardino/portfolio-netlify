@@ -1,0 +1,45 @@
+.scroll {
+	height: 100%;
+
+	&__track {
+		position: relative;
+		width: 1px;
+		height: 100%;
+	}
+	&__bar {
+		width: 5px;
+		height: 80px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&--black {
+		.scroll {
+			&__track {
+				background-color: $darkScrollWork;
+			}
+			&__bar {
+				background-color: $darkScrollWork;
+			}
+		}
+	}
+	&--white {
+		.scroll {
+			&__track {
+				background-color: $darkScrollPortfolio;
+			}
+			&__bar {
+				width: 7px;
+				height: 173px;
+				background-color: $darkScrollPortfolio;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.scroll {
+		display: none;
+	}
+}

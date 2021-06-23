@@ -1,0 +1,28 @@
+.section {
+	position: relative;
+	min-height: 100vh;
+
+	@media (min-width: $tableWidth) {
+		&:before {
+			content: "";
+			background-color: $darkMainColor;
+			width: 1px;
+			height: 46%;
+
+			position: absolute;
+			left: 0;
+			top: 190px;
+		}
+
+		&:after {
+			content: "";
+			background-color: $darkMainColor;
+			width: 1px;
+			height: 60%;
+
+			position: absolute;
+			right: 0;
+			top: 190px;
+		}
+	}
+}
