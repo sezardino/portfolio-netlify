@@ -1,7 +1,7 @@
-import home from "./home";
-import about from "./about";
-import skills from "./skills";
-import works from "./works";
-import contact from "./contact";
+import HomeScreen from "./home";
+import AboutScreen from "./about";
+import SkillsScreen from "./skills";
+import WorksScreen from "./works";
+import ContactScreen from "./contact";
 
-export { home, about, skills, works, contact };
+export { HomeScreen, AboutScreen, SkillsScreen, WorksScreen, ContactScreen };
