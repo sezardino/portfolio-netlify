@@ -6,5 +6,5 @@ screenTitle:
   - Edward
   - Arechwa
 subtitle: junior front-end developer
-image: ""
+image: hero.png
 ---
