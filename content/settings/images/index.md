@@ -1,5 +1,5 @@
 ---
 logo:
   image: logo.svg
-  logoAlt: Edward Arechwa Logotype
+  alt: Edward Arechwa Logotype
 ---

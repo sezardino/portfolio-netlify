@@ -2,10 +2,11 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 
 const query = graphql`
-	query MyQuery {
+	query {
 		markdownRemark(fileAbsolutePath: { regex: "/images/" }) {
 			frontmatter {
 				logo {
+					alt
 					image {
 						publicURL
 					}
@@ -16,19 +17,12 @@ const query = graphql`
 `;
 
 const Logo = () => {
-	const {
-		markdownRemark: {
-			frontmatter: {
-				logo: {
-					image: { publicURL },
-				},
-			},
-		},
-	} = useStaticQuery(query);
+	const data = useStaticQuery(query);
+	const logo = data.markdownRemark.frontmatter.logo;
 
 	return (
 		<Link to="/" className="logo">
-			<ImageComponent data={imageData} />
+			<img src={logo.image.publicURL} alt={logo.alt} />
 		</Link>
 	);
 };

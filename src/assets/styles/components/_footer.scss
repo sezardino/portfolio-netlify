@@ -2,7 +2,7 @@
 	z-index: 1;
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 
 	position: absolute;
@@ -10,24 +10,26 @@
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
-}
 
-@media (min-width: $tableWidth) {
-	.footer {
-		max-width: 480px;
+	@include breakpoint-up("md") {
+		justify-content: flex-start;
 
 		bottom: 80px;
 		left: 50%;
-		transform: translateX(-82%);
 	}
-}
-
-@media (min-width: $desktopWidth) {
-	.footer {
-		max-width: 555px;
-
+	@include breakpoint-up("lg") {
 		bottom: 109px;
 		left: 50%;
-		transform: translateX(-105%);
+	}
+
+	&__nav {
+		max-width: 80%;
+
+		@include breakpoint-up("md") {
+			max-width: 480px;
+		}
+		@include breakpoint-up("lg") {
+			max-width: 555px;
+		}
 	}
 }

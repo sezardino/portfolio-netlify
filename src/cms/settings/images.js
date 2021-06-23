@@ -12,8 +12,8 @@ const images = {
 			widget: "object",
 			required: false,
 			fields: [
-				{ label: "Logo", name: "logo", widget: "image", required: false },
-				{ label: "Logo Alr", name: "logoAlt", widget: "string", required: false },
+				{ label: "Image", name: "image", widget: "image", required: false },
+				{ label: "Alt", name: "alt", widget: "string", required: false },
 			],
 		},
 		{ label: "Apple icon", name: "appleIcon", widget: "image", required: false },
