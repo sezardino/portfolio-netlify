@@ -5,6 +5,8 @@ const home = {
 	name: "home",
 	folder: "content/landing/",
 	file: "content/landing/home.md",
+	media_folder: "",
+	public_folder: "",
 	fields: [
 		{ label: "Title", name: "title", widget: "text", required: false },
 		title,

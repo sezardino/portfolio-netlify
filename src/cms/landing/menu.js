@@ -3,6 +3,8 @@ const menu = {
 	name: "menu",
 	folder: "content/landing/",
 	file: "content/landing/menu.md",
+	media_folder: "",
+	public_folder: "",
 	fields: [
 		{
 			label: "Menu List",

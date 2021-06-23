@@ -3,6 +3,8 @@ const noPage = {
 	name: "no-page",
 	folder: "content/settings/404",
 	file: "content/settings/404/index.md",
+	media_folder: "",
+	public_folder: "",
 	fields: [
 		{
 			label: "Title",

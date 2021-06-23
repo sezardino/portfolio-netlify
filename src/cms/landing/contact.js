@@ -3,6 +3,8 @@ const header = {
 	name: "contact",
 	folder: "content/landing/",
 	file: "content/landing/contact.md",
+	media_folder: "",
+	public_folder: "",
 	fields: [
 		{ label: "Title", name: "title", widget: "string", required: false },
 		{

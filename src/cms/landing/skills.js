@@ -5,6 +5,8 @@ const skills = {
 	name: "skills",
 	folder: "content/landing/",
 	file: "content/landing/skills.md",
+	media_folder: "",
+	public_folder: "",
 	fields: [
 		title,
 		{ label: "Info text", name: "infoText", widget: "string", required: false },

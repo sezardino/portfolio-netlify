@@ -21,7 +21,7 @@ CMS.init({
 			uploadMedia: "[skip ci] Upload “{{path}}”",
 			deleteMedia: "[skip ci] Delete “{{path}}”",
 		},
-		publish_mode: "editorial_workflow",
+		// publish_mode: "editorial_workflow",
 		media_folder: "static/img",
 		public_folder: "/img",
 		collections: [settings, landing, project],

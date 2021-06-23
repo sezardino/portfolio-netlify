@@ -3,6 +3,8 @@ const images = {
 	name: "images",
 	folder: "content/settings/images",
 	file: "content/settings/images/index.md",
+	media_folder: "",
+	public_folder: "",
 	fields: [
 		{
 			label: "Logo",
