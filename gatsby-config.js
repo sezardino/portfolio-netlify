@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: "Gatsby starter",
-        siteUrl: "",
+        siteUrl: "http://localhost:8000/",
         description: ``,
     },
     plugins: [
