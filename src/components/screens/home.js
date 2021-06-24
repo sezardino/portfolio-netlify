@@ -24,7 +24,7 @@ const Home = () => {
 	const data = useStaticQuery(query);
 	const { image, screenTitle, subtitle, title } = data.markdownRemark.frontmatter;
 	return (
-		<section className="hero container animate__animated ">
+		<section className="screen hero container animate__animated ">
 			<h1 className="hidden">{title}</h1>
 			<div className="hero__img animate__animated animate__fadeInBottomRight">
 				<img src={image.childImageSharp.fluid.src} alt={title} />

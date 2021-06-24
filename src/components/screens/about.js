@@ -1,9 +1,8 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-// import { stringSplit } from "../utils";
 
 const query = graphql`
-	query MyQuery {
+	query {
 		markdownRemark(fileAbsolutePath: { regex: "/about.md/" }) {
 			frontmatter {
 				screenTitle
@@ -21,7 +20,7 @@ const About = () => {
 	} = data.markdownRemark;
 	console.log(screenTitle);
 	return (
-		<section className="about container">
+		<section className="screen about container">
 			<h2 className="title title--main title--about about__title">
 				{screenTitle.map((word, index) => (
 					<span className={`row  animate__animated animate__rollIn animate__delay-${index}`} key={word}>
