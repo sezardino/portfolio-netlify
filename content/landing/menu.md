@@ -5,7 +5,7 @@ menuList:
   - label: About
     slug: about
   - label: Skills
-    slug: skils
+    slug: skills
   - label: Works
     slug: works
   - label: Contact
