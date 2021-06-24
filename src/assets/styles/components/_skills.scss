@@ -2,22 +2,68 @@
 	padding-top: 84px;
 	padding-bottom: 100px;
 
-	&__skills-list {
-		margin-top: 28px;
-	}
-}
-
-@media (min-width: $tableWidth) {
-	.skills {
+	@include breakpoint-up("md") {
 		padding-top: 210px;
 		padding-bottom: 100px;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+	}
 
-		&__skills-list {
+	&__title {
+		padding: 12px 0 12px 25px;
+
+		@include breakpoint-up("md") {
+			min-width: 230px;
+			padding: 0;
+			padding-right: 20px;
+		}
+	}
+
+	&__list {
+		margin-top: 28px;
+		@include breakpoint-up("md") {
 			order: -1;
 			margin-top: 0;
+
+			width: 100%;
+			max-width: 590px;
+			padding-left: 20px;
+
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		@include breakpoint-up("lg") {
+			padding-left: 65px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include breakpoint-up("md") {
+			width: 100%;
+			max-width: 45%;
+		}
+	}
+
+	&__item-name {
+		font-size: 20px;
+		line-height: 38px;
+
+		letter-spacing: 0.1em;
+
+		color: $darkSecondaryFC;
+
+		@include breakpoint-up("md") {
+			font-size: 19px;
+			line-height: 36px;
+
+			letter-spacing: 0.1em;
 		}
 	}
 }
