@@ -19,7 +19,7 @@ const About = () => {
 		html,
 	} = data.markdownRemark;
 	return (
-		<section className="screen about container">
+		<section className="about container">
 			<h2 className="title title--main title--about about__title">
 				{screenTitle.map((word, index) => (
 					<span className={`row  animate__animated animate__rollIn animate__delay-${index}`} key={word}>

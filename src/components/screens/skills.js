@@ -22,7 +22,7 @@ const Skills = () => {
 	const data = useStaticQuery(query);
 	const { screenTitle, infoText, skillsList } = data.markdownRemark.frontmatter;
 	return (
-		<section className="screen skills container">
+		<section className="skills container">
 			<h2 className="title title--main title--skills skills__title">
 				{screenTitle.map((word, index) => {
 					return (

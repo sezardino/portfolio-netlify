@@ -27,7 +27,7 @@ const Contact = () => {
 	const data = useStaticQuery(query);
 	const { title, socialMedia, contactInfo } = data.markdownRemark.frontmatter;
 	return (
-		<section className="screen contact container">
+		<section className="contact container">
 			<div className="contact__wrapper">
 				<h2 className="title title--contact title--main contact__title animate__animated animate__jackInTheBox">
 					{title}

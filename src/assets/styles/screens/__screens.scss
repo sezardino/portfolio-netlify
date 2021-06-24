@@ -3,9 +3,50 @@
 @import "./home";
 @import "./portfolio";
 
-.screen {
+.screens {
+	display: flex;
+	overflow: hidden;
 	position: relative;
+	min-width: 100vw;
 	min-height: 100vh;
+
+	position: relative;
+}
+
+.screen {
+	min-height: 100vh;
+	min-width: 100vw;
+
+	display: none;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #1d1d1d;
+
+	transition: 1s transform ease-in-out;
+
+	&--current {
+		display: initial;
+		z-index: 2;
+		transform: translateX(0);
+	}
+
+	&--prev {
+		display: initial;
+		z-index: 1;
+		transform: translateX(-100%);
+	}
+
+	&--next {
+		display: initial;
+		z-index: 1;
+		transform: translateX(100%);
+	}
+}
+
+section {
+	position: relative;
 
 	@media (min-width: $tableWidth) {
 		&:before {

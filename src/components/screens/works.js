@@ -16,7 +16,7 @@ const Works = () => {
 	const data = useStaticQuery(query);
 	const { infoText, screenTitle } = data.markdownRemark.frontmatter;
 	return (
-		<section className=" screen portfolio container">
+		<section className="portfolio container">
 			<h2 className="title title--main title--portfolio portfolio__title">
 				{screenTitle.map((word, index) => {
 					return (
