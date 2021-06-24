@@ -4,7 +4,6 @@ import Logo from "./logo";
 
 const Header = ({ menu, currentPage }) => {
 	const [menuOpen, setMenuOpen] = useState(false);
-
 	return (
 		<header className="header container">
 			<button className="button button--hamburger header__button" onClick={() => setMenuOpen(true)}>
@@ -15,16 +14,21 @@ const Header = ({ menu, currentPage }) => {
 				<button className="button button--close menu__button" onClick={() => setMenuOpen(false)}>
 					<span className="hidden">close menu</span>
 				</button>
-				<nav className="nav nav--header menu__nav header__nav">
-					{menu.menu.map((data, index) => (
-						<Link
-							to={"#" + data.slug}
-							className={`nav__link ${data.slug === currentPage ? "nav__link--active" : ""}`}
-							key={`${index}+${data.title}`}
-						>
-							{data.label}
-						</Link>
-					))}
+				<nav className="nav menu__nav header__nav">
+					<ul className="nav__list">
+						{menu.menu.map((data, index) => (
+							<li className="nav__item" key={data.slug}>
+								<Link
+									to={"#" + data.slug}
+									className={`nav__link ${data.slug === currentPage.slug ? "nav__link--active" : ""}`}
+									onClick={() => setMenuOpen(false)}
+								>
+									{data.label}
+								</Link>
+							</li>
+						))}
+					</ul>
+					<div className="nav__line" style={{ left: `calc(${currentPage.index * (100 / menu.menu.length) + '%'} + 10px)` }}></div>
 				</nav>
 			</div>
 		</header>

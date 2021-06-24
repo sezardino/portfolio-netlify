@@ -22,8 +22,13 @@
 		left: 50%;
 	}
 
-	&__nav {
+	&__line {
+		width: 100%;
+		height: 1px;
+		background-color: white;
 		max-width: 80%;
+
+		position: relative;
 
 		@include breakpoint-up("md") {
 			max-width: 480px;
@@ -32,4 +37,27 @@
 			max-width: 555px;
 		}
 	}
+
+	&__current {
+		width: 100%;
+		height: 5px;
+		background-color: white;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		transition: 1s left ease;
+	}
+
+	// &__nav {
+	// 	max-width: 80%;
+
+	// 	@include breakpoint-up("md") {
+	// 		max-width: 480px;
+	// 	}
+	// 	@include breakpoint-up("lg") {
+	// 		max-width: 555px;
+	// 	}
+	// }
 }
