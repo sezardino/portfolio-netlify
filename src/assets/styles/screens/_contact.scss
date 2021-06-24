@@ -2,39 +2,35 @@
 	padding-top: 84px;
 	display: flex;
 	flex-direction: column;
+	@include breakpoint-up("md") {
+		padding-top: 210px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 	&__title {
+		@include breakpoint-up("md") {
+			margin-right: 65px;
+			padding: 0;
+		}
 	}
 	&__wrapper {
+		@include breakpoint-up("md") {
+			order: 1;
+		}
 	}
 
 	&__info {
 		margin-top: 28px;
+		margin-top: 90px;
+		@include breakpoint-up("md") {
+			margin-top: 90px;
+		}
 	}
 
 	&__social {
 		margin: 0 auto;
 		margin-top: 47px;
-	}
-}
-
-@media (min-width: $tableWidth) {
-	.contact {
-		padding-top: 210px;
-		flex-direction: row;
-		justify-content: space-between;
-		&__title {
-			margin-right: 65px;
-			padding: 0;
-		}
-		&__wrapper {
-			order: 1;
-		}
-
-		&__info {
-			margin-top: 90px;
-		}
-
-		&__social {
+		@include breakpoint-up("md") {
 			margin: 0 auto;
 		}
 	}

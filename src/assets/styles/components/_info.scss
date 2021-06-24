@@ -25,5 +25,17 @@
 		letter-spacing: 0.1em;
 
 		color: $darkSecondaryFC;
+
+		display: none;
+		@include breakpoint-up("lg") {
+			display: inline-block;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		@include breakpoint-up("lg") {
+			display: none;
+		}
 	}
 }

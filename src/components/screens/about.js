@@ -18,7 +18,6 @@ const About = () => {
 		frontmatter: { screenTitle },
 		html,
 	} = data.markdownRemark;
-	console.log(screenTitle);
 	return (
 		<section className="screen about container">
 			<h2 className="title title--main title--about about__title">
