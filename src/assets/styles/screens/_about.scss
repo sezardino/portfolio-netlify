@@ -2,26 +2,34 @@
 	padding-top: 84px;
 	padding-bottom: 113px;
 
-	&__text {
-		margin-top: 28px;
-	}
-}
-
-@media (min-width: $tableWidth) {
-	.about {
+	@include breakpoint-up("md") {
 		padding-top: 210px;
 		padding-bottom: 113px;
 
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+	}
 
-		&__title {
-			order: 1;
+	&__title {
+		padding: 12px 0 12px 25px;
+		@include breakpoint-up("md") {
+			padding-left: 0;
 		}
-		&__text {
+	}
+
+	&__wrapper {
+		max-width: 548px;
+		margin-top: 28px;
+		@include breakpoint-up("md") {
 			margin-top: 0;
-			order: -1;
+			padding-left: 30px;
+		}
+	}
+
+	&__wrapper {
+		p:not(:last-child) {
+			margin-bottom: 28px;
 		}
 	}
 }

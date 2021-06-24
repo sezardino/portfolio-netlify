@@ -3,6 +3,43 @@
 	color: $darkMainFC;
 	font-weight: 400;
 
+	cursor: default;
+
+	&--main {
+		// padding-left: 25px;
+		// padding-top: 12px;
+		// padding-bottom: 12px;
+		border-left: 1px solid $darkThirdBg;
+
+		font-size: 40px;
+		line-height: 42px;
+
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+
+		color: $darkMainFC;
+
+		@include breakpoint-up("md") {
+			// padding: 0;
+			// padding-right: 20px;
+			// padding-bottom: 12px;
+			border-left: none;
+
+			font-size: 106px;
+			line-height: 109px;
+
+			text-align: right;
+
+			min-width: 315px;
+			.row {
+				display: block;
+			}
+		}
+		@include breakpoint-up("lg") {
+			// padding-right: 47px;
+		}
+	}
+
 	&--name {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 200;
@@ -13,6 +50,26 @@
 		display: block;
 	}
 
+	&--about {
+		@include breakpoint-up("md") {
+			font-size: 75px;
+			line-height: 80px;
+		}
+		@include breakpoint-up("lg") {
+			font-size: 84px;
+			line-height: 90px;
+		}
+		@include breakpoint-up("lg") {
+			font-size: 118px;
+			line-height: 125px;
+			padding-right: 0;
+		}
+		@include breakpoint-up("xl") {
+			font-size: 140px;
+			line-height: 147px;
+		}
+	}
+
 	&--surname {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 200;
@@ -20,21 +77,6 @@
 		line-height: 47px;
 		letter-spacing: 0.02em;
 		display: block;
-	}
-
-	&--main {
-		padding-left: 25px;
-		padding-top: 12px;
-		padding-bottom: 12px;
-		border-left: 1px solid $darkThirdBg;
-
-		font-size: 40px;
-		line-height: 42px;
-
-		letter-spacing: 0.08em;
-		text-transform: uppercase;
-
-		color: $darkMainFC;
 	}
 
 	&--popup {
@@ -91,26 +133,6 @@
 		}
 
 		&--main {
-			padding: 0;
-			padding-right: 20px;
-			padding-bottom: 12px;
-			border-left: none;
-
-			font-size: 106px;
-			line-height: 109px;
-
-			text-align: right;
-
-			min-width: 315px;
-			.row {
-				display: block;
-			}
-		}
-
-		&--about {
-			// min-width: 315px;
-			font-size: 84px;
-			line-height: 90px;
 		}
 
 		&--skills {
@@ -168,8 +190,8 @@
 		}
 
 		&--about {
-			padding-left: 65px;
-			max-width: 548px;
+			// padding-left: 65px;
+			// max-width: 548px;
 			font-size: 17px;
 			line-height: 32px;
 		}
@@ -189,12 +211,6 @@
 		}
 
 		&--main {
-			padding-right: 47px;
-		}
-
-		&--about {
-			font-size: 140px;
-			line-height: 147px;
 		}
 
 		&--popup {
