@@ -12,6 +12,7 @@
 
 	&__title {
 		padding: 12px 0 12px 25px;
+		order: 1;
 
 		@include breakpoint-up("md") {
 			min-width: 230px;
@@ -20,23 +21,40 @@
 		}
 	}
 
-	&__list {
-		margin-top: 28px;
+	&__wrapper {
 		@include breakpoint-up("md") {
-			order: -1;
 			margin-top: 0;
 
 			width: 100%;
 			max-width: 590px;
 			padding-left: 20px;
+		}
 
+		@include breakpoint-up("lg") {
+			padding-left: 65px;
+		}
+	}
+
+	&__info-text {
+		display: none;
+
+		font-size: 16px;
+		line-height: 19px;
+
+		@include breakpoint-up("lg") {
+			display: block;
+		}
+	}
+
+	&__list {
+		@include breakpoint-up("md") {
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
 		}
 
 		@include breakpoint-up("lg") {
-			padding-left: 65px;
+			margin-top: 28px;
 		}
 	}
 

@@ -39,26 +39,29 @@ const Skills = () => {
 					);
 				})}
 			</h2>
-			<ul className="skills__list skills__skills-list">
-				{skillsList.map((skill) => (
-					<li
-						className="skills__item  animate__animated animate__fadeInLeft"
-						key={`${skill.name}${skill.level}`}
-					>
-						<p className="skills__item-name">{skill.name}</p>
-						<ul className="dots skills__dots  animate__animated animate__fadeInLeft animate__delay-2">
-							{Array.from({ length: 5 }).map((_, index) => (
-								<li
-									className={`dots__item ${index <= skill.level ? "dots__item--active" : ""}`}
-									key={index}
-								>
-									<p className="hidden">{skill.description}</p>
-								</li>
-							))}
-						</ul>
-					</li>
-				))}
-			</ul>
+			<div className="skills__wrapper">
+				<p className="skills__info-text">{infoText}</p>
+				<ul className="skills__list skills__skills-list">
+					{skillsList.map((skill) => (
+						<li
+							className="skills__item  animate__animated animate__fadeInLeft"
+							key={`${skill.name}${skill.level}`}
+						>
+							<p className="skills__item-name">{skill.name}</p>
+							<ul className="dots skills__dots  animate__animated animate__fadeInLeft animate__delay-2">
+								{Array.from({ length: 5 }).map((_, index) => (
+									<li
+										className={`dots__item ${index <= skill.level ? "dots__item--active" : ""}`}
+										key={index}
+									>
+										<p className="hidden">{skill.description}</p>
+									</li>
+								))}
+							</ul>
+						</li>
+					))}
+				</ul>
+			</div>
 		</section>
 	);
 };
