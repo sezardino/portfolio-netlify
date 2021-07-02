@@ -30,11 +30,14 @@
 
 		position: relative;
 
+		margin-right: 10px;
+		margin-left: 10px;
+
 		@include breakpoint-up("md") {
-			max-width: 480px;
+			max-width: 380px;
 		}
 		@include breakpoint-up("lg") {
-			max-width: 555px;
+			max-width: 450px;
 		}
 	}
 
@@ -49,15 +52,4 @@
 
 		transition: 1s left ease;
 	}
-
-	// &__nav {
-	// 	max-width: 80%;
-
-	// 	@include breakpoint-up("md") {
-	// 		max-width: 480px;
-	// 	}
-	// 	@include breakpoint-up("lg") {
-	// 		max-width: 555px;
-	// 	}
-	// }
 }
