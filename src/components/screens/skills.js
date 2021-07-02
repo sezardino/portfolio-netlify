@@ -24,12 +24,9 @@ const Skills = () => {
 	return (
 		<section className="skills container">
 			<h2 className="title title--main title--skills skills__title">
-				{screenTitle.map((word, index) => {
+				{screenTitle.map((word) => {
 					return (
-						<span
-							className={`row  animate__animated animate__fadeInRight animate__delay-${index}`}
-							key={word}
-						>
+						<span className="row" key={word}>
 							{word.split("").map((letter, index) => (
 								<span className="title__letter title__letter--scale" key={`${letter}-${index}`}>
 									{letter}
@@ -44,12 +41,12 @@ const Skills = () => {
 				<ul className="skills__list skills__skills-list">
 					{skillsList.map((skill) => (
 						<li
-							className="skills__item  animate__animated animate__fadeInLeft"
+							className="skills__item"
 							key={`${skill.name}${skill.level}`}
 						>
 							<p className="skills__item-name">{skill.name}</p>
 							<p className="hidden">{skill.description}</p>
-							<ul className="dots skills__dots  animate__animated animate__fadeInLeft animate__delay-2">
+							<ul className="dots skills__dots">
 								{Array.from({ length: 5 }).map((_, index) => (
 									<li
 										className={`dots__item ${index <= skill.level ? "dots__item--active" : ""}`}

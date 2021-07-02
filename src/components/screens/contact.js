@@ -29,12 +29,12 @@ const Contact = () => {
 	return (
 		<section className="contact container">
 			<div className="contact__wrapper">
-				<h2 className="title title--contact title--main contact__title animate__animated animate__jackInTheBox">
+				<h2 className="title title--contact title--main contact__title">
 					{title}
 				</h2>
 				<ul className="info contact__info">
 					{contactInfo.map((item) => (
-						<li className="info__item animate__delay-16 animate__animated animate__zoomIn" key={item.name}>
+						<li className="info__item" key={item.name}>
 							<span className="info__def">{item.label}:</span>
 							<span className="info__data">{item.content}</span>
 							<a
@@ -51,7 +51,7 @@ const Contact = () => {
 				{socialMedia.map((item) => {
 					return (
 						<li
-							className="social__item animate__delay-13 animate__animated animate__zoomIn"
+							className="social__item"
 							key={item.name}
 						>
 							<a href={item.link} target="blank" className="social__link" title={item.name}>

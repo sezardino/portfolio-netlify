@@ -24,9 +24,9 @@ const Home = () => {
 	const data = useStaticQuery(query);
 	const { image, screenTitle, subtitle, title } = data.markdownRemark.frontmatter;
 	return (
-		<section className="hero container animate__animated ">
+		<section className="hero container">
 			<h1 className="hidden">{title}</h1>
-			<div className="hero__img animate__animated animate__fadeInBottomRight">
+			<div className="hero__img">
 				<img src={image.childImageSharp.fluid.src} alt={title} />
 			</div>
 			<div className="hero__wrapper">
@@ -36,15 +36,13 @@ const Home = () => {
 							key={item}
 							className={`title title--${
 								index === 0 ? "name" : "surname"
-							} hero__title--name animate__delay-${
-								index === 0 ? "12" : "13"
-							} animate__animated animate__fadeInBottomLeft`}
+							} hero__title--name`}
 						>
 							{item}
 						</span>
 					))}
 				</h2>
-				<p className="text text--hero hero__text animate__animated animate__delay-14 animate__animated animate__fadeInBottomLeft">
+				<p className="text text--hero hero__text">
 					{subtitle}
 				</p>
 			</div>

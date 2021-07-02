@@ -21,7 +21,7 @@ const Works = () => {
 				{screenTitle.map((word, index) => {
 					return (
 						<span
-							className={`row  animate__animated animate__rotateInDownRight animate__delay-1${index}`}
+							className="row"
 							key={word}
 						>
 							{word.split("").map((letter, index) => (
@@ -35,12 +35,12 @@ const Works = () => {
 			</h2>
 			<div className="portfolio__wrapper ">
 				<p className="portfolio__info-text">{infoText}</p>
-				<ul className="portfolio__list  undefined animate__delay-1">
+				<ul className="portfolio__list">
 					{/* {data.works.map((item) => {
 						const image = getImage(item.node.frontmatter.projectImage.preview);
 						return (
 							<li
-								className="portfolio__item  animate__animated animate__flipInX animate__delay-14"
+								className="portfolio__item"
 								key={item.node.id}
 							>
 								<Link to={item.node.fields.slug}>
@@ -50,7 +50,7 @@ const Works = () => {
 						);
 					})} */}
 				</ul>
-				<div className="scroll scroll--white portfolio__scroll  animate__animated animate__fadeIn animate__delay-5">
+				<div className="scroll scroll--white portfolio__scroll">
 					<div className="scroll__track">
 						<div className="scroll__bar" style={{ top: "0%", transform: "translate(-50%, 0%)" }}></div>
 					</div>
