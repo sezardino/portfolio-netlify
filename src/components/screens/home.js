@@ -34,17 +34,13 @@ const Home = () => {
 					{screenTitle.map((item, index) => (
 						<span
 							key={item}
-							className={`title title--${
-								index === 0 ? "name" : "surname"
-							} hero__title--name`}
+							className={`title title--${index === 0 ? "name" : "surname"} hero__title--name`}
 						>
 							{item}
 						</span>
 					))}
 				</h2>
-				<p className="text text--hero hero__text">
-					{subtitle}
-				</p>
+				<p className="text text--hero hero__text">{subtitle}</p>
 			</div>
 		</section>
 	);
