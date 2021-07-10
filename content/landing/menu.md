@@ -1,7 +1,7 @@
 ---
 menuList:
   - label: Home
-    slug: home
+    slug: /
   - label: About
     slug: about
   - label: Skills
