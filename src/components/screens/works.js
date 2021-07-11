@@ -1,31 +1,9 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 
-const query = graphql`
-	query {
-		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
-			edges {
-				node {
-					frontmatter {
-						mockup {
-							childImageSharp {
-								fluid(quality: 100) {
-									src
-								}
-							}
-						}
-						title
-					}
-				}
-			}
-		}
-	}
-`;
-
 const Works = ({ props }) => {
 	const data = useStaticQuery(query);
 	const works = data.allMarkdownRemark.edges;
-	console.log(works);
 	const { infoText, screenTitle } = props;
 	return (
 		<section className="portfolio container">
@@ -47,7 +25,6 @@ const Works = ({ props }) => {
 				<ul className="portfolio__list">
 					{works.map((item) => {
 						const { title, mockup } = item.node.frontmatter;
-						console.log(item);
 						return (
 							<li className="portfolio__item" key={title}>
 								<Link to={"#" + title}>
@@ -58,7 +35,6 @@ const Works = ({ props }) => {
 					})}
 					{works.map((item) => {
 						const { title, mockup } = item.node.frontmatter;
-						console.log(item);
 						return (
 							<li className="portfolio__item" key={title}>
 								<Link to={"#" + title}>
@@ -69,7 +45,6 @@ const Works = ({ props }) => {
 					})}
 					{works.map((item) => {
 						const { title, mockup } = item.node.frontmatter;
-						console.log(item);
 						return (
 							<li className="portfolio__item" key={title}>
 								<Link to={"#" + title}>
@@ -80,7 +55,6 @@ const Works = ({ props }) => {
 					})}
 					{works.map((item) => {
 						const { title, mockup } = item.node.frontmatter;
-						console.log(item);
 						return (
 							<li className="portfolio__item" key={title}>
 								<Link to={"#" + title}>
@@ -109,5 +83,26 @@ const Works = ({ props }) => {
 		</section>
 	);
 };
+
+const query = graphql`
+	query {
+		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
+			edges {
+				node {
+					frontmatter {
+						mockup {
+							childImageSharp {
+								fluid(quality: 100) {
+									src
+								}
+							}
+						}
+						title
+					}
+				}
+			}
+		}
+	}
+`;
 
 export default Works;

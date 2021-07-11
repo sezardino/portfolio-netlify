@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import React from "react";
+import Modal from "../components/parts/modal";
 import Works from "../components/screens/works";
 import Layout from "../layouts";
 
@@ -8,6 +9,7 @@ const WorksPage = ({ data }) => {
 	return (
 		<Layout>
 			<Works props={props} />
+			<Modal />
 		</Layout>
 	);
 };
