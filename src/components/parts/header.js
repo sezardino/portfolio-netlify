@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Logo from "./logo";
 
 const Header = ({ menu, currentPage }) => {
 	const [menuOpen, setMenuOpen] = useState(false);
-	console.log(menu);
 	return (
 		<header className="header container">
 			<button className="button button--hamburger header__button" onClick={() => setMenuOpen(true)}>
@@ -17,21 +16,24 @@ const Header = ({ menu, currentPage }) => {
 				</button>
 				<nav className="nav menu__nav header__nav">
 					<ul className="nav__list">
-						{menu.menu.map((data) => (
+						{menu.map((data) => (
 							<li className="nav__item" key={data.slug}>
-								<Link
-									to={"#" + data.slug}
-									className={`nav__link ${data.slug === currentPage.slug ? "nav__link--active" : ""}`}
+								<AniLink
+									cover
+									bg="#1d1d1d"
+									to={"/" + data.slug}
+									activeClassName="nav__AniLink--active"
+									className="nav__link"
 									onClick={() => setMenuOpen(false)}
 								>
 									{data.label}
-								</Link>
+								</AniLink>
 							</li>
 						))}
 					</ul>
 					<div
 						className="nav__line"
-						style={{ left: `calc(${currentPage.index * (100 / menu.menu.length) + "%"} + 10px)` }}
+						style={{ left: `calc(${currentPage.index * (100 / menu.length) + "%"} + 10px)` }}
 					></div>
 				</nav>
 			</div>

@@ -3,27 +3,36 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 
 const query = graphql`
 	query {
-		markdownRemark(fileAbsolutePath: { regex: "/works.md/" }) {
-			frontmatter {
-				screenTitle
-				infoText
+		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
+			edges {
+				node {
+					frontmatter {
+						mockup {
+							childImageSharp {
+								fluid(quality: 100) {
+									src
+								}
+							}
+						}
+						title
+					}
+				}
 			}
 		}
 	}
 `;
 
-const Works = () => {
+const Works = ({ props }) => {
 	const data = useStaticQuery(query);
-	const { infoText, screenTitle } = data.markdownRemark.frontmatter;
+	const works = data.allMarkdownRemark.edges;
+	console.log(works);
+	const { infoText, screenTitle } = props;
 	return (
 		<section className="portfolio container">
 			<h2 className="title title--main title--portfolio portfolio__title">
 				{screenTitle.map((word, index) => {
 					return (
-						<span
-							className="row"
-							key={word}
-						>
+						<span className="row" key={word}>
 							{word.split("").map((letter, index) => (
 								<span className="title__letter title__letter--scale" key={`${letter}-${index}`}>
 									{letter}
@@ -36,19 +45,60 @@ const Works = () => {
 			<div className="portfolio__wrapper ">
 				<p className="portfolio__info-text">{infoText}</p>
 				<ul className="portfolio__list">
-					{/* {data.works.map((item) => {
-						const image = getImage(item.node.frontmatter.projectImage.preview);
+					{works.map((item) => {
+						const { title, mockup } = item.node.frontmatter;
+						console.log(item);
 						return (
-							<li
-								className="portfolio__item"
-								key={item.node.id}
-							>
-								<Link to={item.node.fields.slug}>
-									<GatsbyImage image={image} alt={item.node.frontmatter.title} />
+							<li className="portfolio__item" key={title}>
+								<Link to={"#" + title}>
+									<img src={mockup.childImageSharp.fluid.src} alt={title} />
 								</Link>
 							</li>
 						);
-					})} */}
+					})}
+					{works.map((item) => {
+						const { title, mockup } = item.node.frontmatter;
+						console.log(item);
+						return (
+							<li className="portfolio__item" key={title}>
+								<Link to={"#" + title}>
+									<img src={mockup.childImageSharp.fluid.src} alt={title} />
+								</Link>
+							</li>
+						);
+					})}
+					{works.map((item) => {
+						const { title, mockup } = item.node.frontmatter;
+						console.log(item);
+						return (
+							<li className="portfolio__item" key={title}>
+								<Link to={"#" + title}>
+									<img src={mockup.childImageSharp.fluid.src} alt={title} />
+								</Link>
+							</li>
+						);
+					})}
+					{works.map((item) => {
+						const { title, mockup } = item.node.frontmatter;
+						console.log(item);
+						return (
+							<li className="portfolio__item" key={title}>
+								<Link to={"#" + title}>
+									<img src={mockup.childImageSharp.fluid.src} alt={title} />
+								</Link>
+							</li>
+						);
+					})}
+					{works.map((item) => {
+						const { title, mockup } = item.node.frontmatter;
+						return (
+							<li className="portfolio__item" key={title}>
+								<Link to={"#" + title}>
+									<img src={mockup.childImageSharp.fluid.src} alt={title} />
+								</Link>
+							</li>
+						);
+					})}
 				</ul>
 				<div className="scroll scroll--white portfolio__scroll">
 					<div className="scroll__track">

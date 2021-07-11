@@ -1,39 +1,41 @@
 {
-  "name": "personal-trainer-website",
-  "author": "Edward",
-  "version": "1.0.0",
-  "private": true,
-  "description": "v3",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "gatsby": "^3.4.1",
-    "gatsby-image": "^3.6.0",
-    "gatsby-plugin-netlify": "^3.6.1",
-    "gatsby-plugin-netlify-cms": "^5.6.0",
-    "gatsby-plugin-portal": "^1.0.7",
-    "gatsby-plugin-react-helmet": "^4.6.0",
-    "gatsby-plugin-sass": "^4.6.0",
-    "gatsby-plugin-sharp": "^3.6.0",
-    "gatsby-plugin-sitemap": "^4.2.0",
-    "gatsby-remark-images": "^5.3.0",
-    "gatsby-source-filesystem": "^3.6.0",
-    "gatsby-transformer-remark": "^4.3.0",
-    "gatsby-transformer-sharp": "^3.6.0",
-    "netlify-cms-app": "^2.15.15",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.34.0",
-    "sharp": "^0.28.3"
-  }
+	"name": "portfolio-netlify",
+	"author": "Edward",
+	"version": "1.0.0",
+	"private": true,
+	"description": "v3",
+	"keywords": [
+		"gatsby"
+	],
+	"license": "MIT",
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"gatsby": "^3.4.1",
+		"gatsby-image": "^3.6.0",
+		"gatsby-plugin-netlify": "^3.6.1",
+		"gatsby-plugin-netlify-cms": "^5.6.0",
+		"gatsby-plugin-portal": "^1.0.7",
+		"gatsby-plugin-react-helmet": "^4.6.0",
+		"gatsby-plugin-sass": "^4.6.0",
+		"gatsby-plugin-sharp": "^3.6.0",
+		"gatsby-plugin-sitemap": "^4.2.0",
+		"gatsby-plugin-transition-link": "^1.20.5",
+		"gatsby-remark-images": "^5.3.0",
+		"gatsby-source-filesystem": "^3.6.0",
+		"gatsby-transformer-remark": "^4.3.0",
+		"gatsby-transformer-sharp": "^3.6.0",
+		"gsap": "^3.7.0",
+		"netlify-cms-app": "^2.15.15",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-helmet": "^6.1.0",
+		"sass": "^1.34.0",
+		"sharp": "^0.28.3"
+	}
 }

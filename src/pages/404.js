@@ -1,9 +1,12 @@
 import * as React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/layouts/";
+import Layout from "../layouts";
 
 const NotFoundPage = ({ data }) => {
-	return <h1>404</h1>;
+	return (
+		<Layout>
+			<h1>404</h1>
+		</Layout>
+	);
 };
 
 export default NotFoundPage;
