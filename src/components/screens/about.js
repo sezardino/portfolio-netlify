@@ -1,23 +1,7 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 
-const query = graphql`
-	query {
-		markdownRemark(fileAbsolutePath: { regex: "/about.md/" }) {
-			frontmatter {
-				screenTitle
-			}
-			html
-		}
-	}
-`;
-
-const About = () => {
-	const data = useStaticQuery(query);
-	const {
-		frontmatter: { screenTitle },
-		html,
-	} = data.markdownRemark;
+const About = ({ props }) => {
+	const { html, screenTitle } = props;
 	return (
 		<section className="about container">
 			<h2 className="title title--main title--about about__title">

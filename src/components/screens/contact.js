@@ -1,31 +1,8 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 
-const query = graphql`
-	query {
-		markdownRemark(fileAbsolutePath: { regex: "/contact.md/" }) {
-			frontmatter {
-				title
-				socialMedia {
-					label
-					link
-					name
-				}
-				contactInfo {
-					content
-					label
-					name
-				}
-			}
-		}
-	}
-`;
+const Contact = ({ props }) => {
+	const { title, socialMedia, contactInfo } = props;
 
-const deleteSpace = (string) => string.replaceAll(" ", "");
-
-const Contact = () => {
-	const data = useStaticQuery(query);
-	const { title, socialMedia, contactInfo } = data.markdownRemark.frontmatter;
 	return (
 		<section className="contact container">
 			<div className="contact__wrapper">

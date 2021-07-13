@@ -1,33 +1,28 @@
+import React, { useState } from "react";
 import { Link } from "gatsby";
-import React, { useState, useEffect } from "react";
 import Portal from "./portal";
+import desktopIcon from "../../assets/images/desktop.svg";
+import mobileIcon from "../../assets/images/mobile.svg";
 
-const Modal = () => {
-	// const [loading, setLoading] = useState(true);
-	const hash = window.location.hash?.slice(1);
-	const [show, setShow] = useState(false);
-	useEffect(() => {
-		if (!hash) {
-			setShow(false);
-			return;
-		}
-		setShow(true);
-		document.body.style.overflow = show ? "hidden" : "initial";
-	}, [hash]);
+const Modal = ({ props, closeHandler }) => {
+	const [view, setView] = useState(true);
+	const show = props ? true : false;
+	const { description, desktop, mobile, name, repo, technologies, view: viewLink } = props;
+	console.log(props);
+	const desktopImg = <img src={desktop.childImageSharp.fluid.src} alt={name} />;
+	const mobileImg = <img src={mobile.childImageSharp.fluid.src} alt={name} />;
 
 	return (
 		<Portal>
-			<section className={`popup ${show ? "popup--show" : ""}`}>
+			<div className={`popup ${show ? "popup--show" : ""}`}>
 				<div className=" popup__wrapper">
-					<Link to="/works/" className="button button--close button--close--dark popup__button"></Link>
-					{/* <h2 className="title title--main title--popup popup__title">{data.descr.name}</h2> */}
+					<Link to="/works/" className="popup__button" onClick={closeHandler}></Link>
+					<h2 className="title title--main title--popup popup__title">{name}</h2>
 					<div className="view popup__view">
 						<div className="view__wrapper">
 							<div className="view__mockup-wrapper">
-								<div className="view__mockup view__mockup--desktop">
-									<div className="view__img">
-										{/* <ImageComponent data={{ sharp: data.images.desktop, alt: data.descr.name }} /> */}
-									</div>
+								<div className={`view__mockup view__mockup--${view ? "desktop" : "mobile"}`}>
+									<div className="view__img">{view ? desktopImg : mobileImg}</div>
 								</div>
 							</div>
 							<div className="scroll scroll--black view__scroll">
@@ -40,47 +35,60 @@ const Modal = () => {
 							</div>
 						</div>
 						<div className="view__buttons">
-							<button className="button button-view view__button button-view--active">
+							<button
+								className={`button button-view view__button ${view ? "button-view--active" : ""}`}
+								onClick={() => setView(true)}
+							>
 								<div className="button__image">
+									<img src={desktopIcon} alt="open desktop version" />
 									{/* <ImageComponent url={desktopIcon} data={{}} /> */}
 								</div>
 								<span className="button-view__text">Desktop</span>
 							</button>
+							<button
+								className={`button button-view view__button ${!view ? "button-view--active" : ""}`}
+								onClick={() => setView(false)}
+							>
+								<div className="button__image">
+									<img src={mobileIcon} alt="open mobile version" />
+								</div>
+								<span className="button-view__text">Mobile</span>
+							</button>
 						</div>
 					</div>
 					<div className="description popup__description">
-						{/* <h2 className="title title--main title--popup description__title">{data.descr.name}</h2> */}
+						<h2 className="title title--main title--popup description__title">{name}</h2>
 						<div className="description__buttons">
-							{/* <Link
-								to={data.descr.repo}
+							<a
+								href={repo}
 								target="blank"
 								className="button button--github button--popup description__button"
 							>
 								View on GitHub
-							</Link>
-							<Link
-								to={data.descr.repo}
+							</a>
+							<a
+								href={viewLink}
 								target="blank"
 								className="button button--ghpages button--popup description__button"
 							>
 								View
-							</Link> */}
+							</a>
 						</div>
-						{/* {data.descr.techn && (
+						{technologies && (
 							<div className="technologies description__technologies">
 								<h3 className="title title--technologies technologies__title">Using Technologies</h3>
 								<ul className="technologies__list">
-									{data.descr.techn.map((item, index) => (
-										<li className="technologies__item" key={`${item}-${index}`}>
-											{item}
+									{technologies.map(({ technology }) => (
+										<li className="technologies__item" key={technology}>
+											{technology}
 										</li>
 									))}
 								</ul>
 							</div>
-						)} */}
+						)}
 					</div>
 				</div>
-			</section>
+			</div>
 		</Portal>
 	);
 };

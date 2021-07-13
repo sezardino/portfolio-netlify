@@ -1,9 +1,7 @@
 import React from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
 
-const Works = ({ props }) => {
-	const data = useStaticQuery(query);
-	const works = data.allMarkdownRemark.edges;
+const Works = ({ props, works, worksHandler }) => {
 	const { infoText, screenTitle } = props;
 	return (
 		<section className="portfolio container">
@@ -23,52 +21,29 @@ const Works = ({ props }) => {
 			<div className="portfolio__wrapper ">
 				<p className="portfolio__info-text">{infoText}</p>
 				<ul className="portfolio__list">
-					{works.map((item) => {
-						const { title, mockup } = item.node.frontmatter;
+					{works.map(({ name, mockup }) => {
 						return (
-							<li className="portfolio__item" key={title}>
-								<Link to={"#" + title}>
-									<img src={mockup.childImageSharp.fluid.src} alt={title} />
+							<li className="portfolio__item" key={name}>
+								<Link to={"#" + name} onClick={() => worksHandler(name)}>
+									<img src={mockup.childImageSharp.fluid.src} alt={name} />
 								</Link>
 							</li>
 						);
 					})}
-					{works.map((item) => {
-						const { title, mockup } = item.node.frontmatter;
+					{works.map(({ name, mockup }) => {
 						return (
-							<li className="portfolio__item" key={title}>
-								<Link to={"#" + title}>
-									<img src={mockup.childImageSharp.fluid.src} alt={title} />
+							<li className="portfolio__item" key={name}>
+								<Link to={"#" + name} onClick={() => worksHandler(name)}>
+									<img src={mockup.childImageSharp.fluid.src} alt={name} />
 								</Link>
 							</li>
 						);
 					})}
-					{works.map((item) => {
-						const { title, mockup } = item.node.frontmatter;
+					{works.map(({ name, mockup }) => {
 						return (
-							<li className="portfolio__item" key={title}>
-								<Link to={"#" + title}>
-									<img src={mockup.childImageSharp.fluid.src} alt={title} />
-								</Link>
-							</li>
-						);
-					})}
-					{works.map((item) => {
-						const { title, mockup } = item.node.frontmatter;
-						return (
-							<li className="portfolio__item" key={title}>
-								<Link to={"#" + title}>
-									<img src={mockup.childImageSharp.fluid.src} alt={title} />
-								</Link>
-							</li>
-						);
-					})}
-					{works.map((item) => {
-						const { title, mockup } = item.node.frontmatter;
-						return (
-							<li className="portfolio__item" key={title}>
-								<Link to={"#" + title}>
-									<img src={mockup.childImageSharp.fluid.src} alt={title} />
+							<li className="portfolio__item" key={name}>
+								<Link to={"#" + name} onClick={() => worksHandler(name)}>
+									<img src={mockup.childImageSharp.fluid.src} alt={name} />
 								</Link>
 							</li>
 						);
@@ -83,26 +58,5 @@ const Works = ({ props }) => {
 		</section>
 	);
 };
-
-const query = graphql`
-	query {
-		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
-			edges {
-				node {
-					frontmatter {
-						mockup {
-							childImageSharp {
-								fluid(quality: 100) {
-									src
-								}
-							}
-						}
-						title
-					}
-				}
-			}
-		}
-	}
-`;
 
 export default Works;

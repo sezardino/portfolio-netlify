@@ -3,7 +3,7 @@ import "../assets/styles/main.scss";
 
 // import Seo from "../parts/seo";
 import Header from "../components/parts/header";
-import Footer from "../components/parts/footer";
+// import Footer from "../components/parts/footer";
 import { useStaticQuery, graphql } from "gatsby";
 
 const getMenuData = (menu, { index }) => {
@@ -12,7 +12,7 @@ const getMenuData = (menu, { index }) => {
 	return { menu, prevPage, nextPage };
 };
 
-const getScreenIndex = (array, slug) => array.findIndex((screen) => screen.slug === slug);
+// const getScreenIndex = (array, slug) => array.findIndex((screen) => screen.slug === slug);
 
 const Layout = ({ children }) => {
 	const data = useStaticQuery(query);
@@ -21,7 +21,9 @@ const Layout = ({ children }) => {
 	// currentPage.slug = location.hash ? location.hash.replace("#", "") : "home";
 	// currentPage.index = menuList.findIndex((item) => item.slug === currentPage.slug);
 	const menuData = getMenuData(menuList, currentPage);
-	const { nextPage, prevPage, menu } = menuData;
+	const {
+		// nextPage, prevPage,
+		menu } = menuData;
 
 	return (
 		<>

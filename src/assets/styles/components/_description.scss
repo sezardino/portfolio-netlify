@@ -1,4 +1,7 @@
 .description {
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
 	&__title {
 		display: none;
 	}
@@ -22,7 +25,6 @@
 
 @media (min-width: $tableWidth) {
 	.description {
-		width: 100%;
 		max-width: 416px;
 		&__title {
 			display: block;
