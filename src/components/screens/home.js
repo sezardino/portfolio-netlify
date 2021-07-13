@@ -1,28 +1,7 @@
-import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
-const query = graphql`
-	query {
-		markdownRemark(fileAbsolutePath: { regex: "/home.md/" }) {
-			frontmatter {
-				title
-				screenTitle
-				subtitle
-				image {
-					childImageSharp {
-						fluid(quality: 100) {
-							src
-						}
-					}
-				}
-			}
-		}
-	}
-`;
-
-const Home = () => {
-	const data = useStaticQuery(query);
-	const { image, screenTitle, subtitle, title } = data.markdownRemark.frontmatter;
+const Home = ({ props }) => {
+	const { image, screenTitle, subtitle, title } = props;
 	return (
 		<section className="hero container">
 			<h1 className="hidden">{title}</h1>
