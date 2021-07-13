@@ -22,73 +22,89 @@
 		padding: 5px;
 
 		color: $darkSecondaryFC;
+		position: relative;
 
 		@include breakpoint-up("md") {
 			padding: 10px;
 		}
-	}
 
-	&__line {
-		@include breakpoint-up("md") {
-			width: 25px;
-			height: 3px;
-			background-color: white;
+		@include breakpoint-up("lg") {
+			&:before {
+				content: "";
+				width: 0;
+				height: 3px;
+				background-color: #b4b7be;
 
-			position: absolute;
-			bottom: -10px;
-			left: 10px;
-
-			transition: 1s left ease;
+				position: absolute;
+				bottom: 0;
+				left: 10px;
+				transition: 0.6s width;
+			}
 		}
-	}
-}
 
-@media (min-width: $tableWidth) {
-	.nav {
-		&--header {
-			flex-direction: row;
-			padding: 0;
-
-			.nav__link {
-				display: block;
-				padding: 10px;
-
-				letter-spacing: 0.1em;
-
-				color: $darkSecondaryFC;
-
-				margin-bottom: 0;
-
-				position: relative;
-
-				margin-right: 17px;
-
-				outline: none;
-				&:focus {
-					transform: scale(1.1);
-				}
-				&:last-child {
-					margin-right: 0;
-				}
-
-				&:hover {
-					transform: scale(1.2);
-				}
-
-				&--active {
-					&:before {
-						content: "";
-						display: block;
-						width: 27px;
-						height: 3px;
-						background-color: white;
-
-						position: absolute;
-						bottom: 0;
-						left: 10px;
-					}
-				}
+		&--active,
+		&:hover,
+		&:active,
+		&:focus {
+			&:before {
+				width: 40%;
 			}
 		}
 	}
 }
+
+// .nav--header {
+// 	.nav {
+
+// 	}
+// }
+
+// @media (min-width: $tableWidth) {
+// 	.nav {
+// 		&--header {
+// 			flex-direction: row;
+// 			padding: 0;
+
+// 			.nav__link {
+// 				display: block;
+// 				padding: 10px;
+
+// 				letter-spacing: 0.1em;
+
+// 				color: $darkSecondaryFC;
+
+// 				margin-bottom: 0;
+
+// 				position: relative;
+
+// 				margin-right: 17px;
+
+// 				outline: none;
+// 				&:focus {
+// 					transform: scale(1.1);
+// 				}
+// 				&:last-child {
+// 					margin-right: 0;
+// 				}
+
+// 				&:hover {
+// 					transform: scale(1.2);
+// 				}
+
+// 				&--active {
+// 					&:before {
+// 						content: "";
+// 						display: block;
+// 						width: 27px;
+// 						height: 3px;
+// 						background-color: white;
+
+// 						position: absolute;
+// 						bottom: 0;
+// 						left: 10px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

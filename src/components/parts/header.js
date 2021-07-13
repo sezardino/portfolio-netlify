@@ -22,7 +22,7 @@ const Header = ({ menu, currentPage }) => {
 									cover
 									bg="#1d1d1d"
 									to={"/" + data.slug}
-									activeClassName="nav__AniLink--active"
+									activeClassName="nav__link--active"
 									className="nav__link"
 									onClick={() => setMenuOpen(false)}
 								>
@@ -31,10 +31,6 @@ const Header = ({ menu, currentPage }) => {
 							</li>
 						))}
 					</ul>
-					<div
-						className="nav__line"
-						style={{ left: `calc(${currentPage.index * (100 / menu.length) + "%"} + 10px)` }}
-					></div>
 				</nav>
 			</div>
 		</header>
