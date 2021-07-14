@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/main.scss";
 
-// import Seo from "../parts/seo";
+import Seo from "../components/parts/seo";
 import Header from "../components/parts/header";
 import Footer from "../components/parts/footer";
 import { useStaticQuery, graphql } from "gatsby";
@@ -12,9 +12,7 @@ const getMenuData = (menu, { index }) => {
 	return { menu, prevPage, nextPage };
 };
 
-// const getScreenIndex = (array, slug) => array.findIndex((screen) => screen.slug === slug);
-
-const Layout = ({ children }) => {
+const Layout = ({ children, seo }) => {
 	const data = useStaticQuery(query);
 	const menuList = data.markdownRemark.frontmatter.menuList;
 	const currentPage = {};
@@ -26,7 +24,7 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Header menu={menu} currentPage={currentPage} />
-			{/* <Seo data={seo} isHome={isHome} /> */}
+			<Seo data={seo} />
 			<main>{children}</main>
 			<Footer menu={{ menu, nextPage, prevPage }} currentPage={currentPage} />
 		</>

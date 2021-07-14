@@ -2,7 +2,7 @@ import title from "../parts/title";
 import seo from "../parts/seo";
 
 const skills = {
-	label: "Skills Screen",
+	label: "Skills",
 	name: "skills",
 	folder: "content/pages/",
 	file: "content/pages/skills.md",

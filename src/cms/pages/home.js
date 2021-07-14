@@ -2,7 +2,7 @@ import title from "../parts/title";
 import seo from "../parts/seo";
 
 const home = {
-	label: "Home Screen",
+	label: "Home",
 	name: "home",
 	folder: "content/pages/",
 	file: "content/pages/home.md",

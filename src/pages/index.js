@@ -4,16 +4,16 @@ import Layout from "../layouts";
 import Home from "../components/screens/home";
 
 const HomePage = ({ data }) => {
-	const { image, screenTitle, subtitle, title } = data.markdownRemark.frontmatter;
+	const { image, screenTitle, subtitle, title, seo } = data.markdownRemark.frontmatter;
 	return (
-		<Layout>
+		<Layout seo={seo}>
 			<Home props={{ image, screenTitle, subtitle, title }} />
 		</Layout>
 	);
 };
 
 const query = graphql`
-	query {
+	{
 		markdownRemark(fileAbsolutePath: { regex: "/home.md/" }) {
 			frontmatter {
 				title
@@ -23,6 +23,17 @@ const query = graphql`
 					childImageSharp {
 						fluid(quality: 100) {
 							src
+						}
+					}
+				}
+				seo {
+					description
+					title
+					image {
+						childImageSharp {
+							fluid(quality: 100, maxHeight: 200) {
+								src
+							}
 						}
 					}
 				}

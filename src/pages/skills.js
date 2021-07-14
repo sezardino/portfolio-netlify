@@ -4,9 +4,9 @@ import Skills from "../components/screens/skills";
 import Layout from "../layouts";
 
 const SkillsPage = ({ data }) => {
-	const { screenTitle, infoText, skillsList } = data.markdownRemark.frontmatter;
+	const { screenTitle, infoText, skillsList, seo } = data.markdownRemark.frontmatter;
 	return (
-		<Layout>
+		<Layout seo={seo}>
 			<Skills props={{ screenTitle, infoText, skillsList }} />
 		</Layout>
 	);
@@ -22,6 +22,17 @@ const query = graphql`
 					description
 					level
 					name
+				}
+				seo {
+					description
+					title
+					image {
+						childImageSharp {
+							fluid(quality: 100, maxHeight: 200) {
+								src
+							}
+						}
+					}
 				}
 			}
 		}

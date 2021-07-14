@@ -5,11 +5,11 @@ import Layout from "../layouts";
 
 const AboutPage = ({ data }) => {
 	const {
-		frontmatter: { screenTitle },
+		frontmatter: { screenTitle, seo },
 		html,
 	} = data.markdownRemark;
 	return (
-		<Layout>
+		<Layout seo={seo}>
 			<About props={{ screenTitle, html }} />
 		</Layout>
 	);
@@ -18,10 +18,21 @@ const AboutPage = ({ data }) => {
 const query = graphql`
 	query {
 		markdownRemark(fileAbsolutePath: { regex: "/about.md/" }) {
+			html
 			frontmatter {
 				screenTitle
+				seo {
+					description
+					title
+					image {
+						childImageSharp {
+							fluid(quality: 100, maxHeight: 200) {
+								src
+							}
+						}
+					}
+				}
 			}
-			html
 		}
 	}
 `;

@@ -1,7 +1,7 @@
 import seo from "../parts/seo";
 
 const contact = {
-	label: "Contact Screen",
+	label: "Contact",
 	name: "contact",
 	folder: "content/pages/",
 	file: "content/pages/contact.md",

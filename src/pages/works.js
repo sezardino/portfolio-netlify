@@ -50,7 +50,7 @@ const WorksPage = ({ data }) => {
 		setCurrentWork(null);
 	};
 	return (
-		<Layout>
+		<Layout seo={pageProps.seo}>
 			<Works props={pageProps} works={works} worksHandler={worksHandler} />
 			{currentWork && <Modal props={currentWork} closeHandler={closeHandler} />}
 		</Layout>
@@ -63,6 +63,17 @@ const query = graphql`
 			frontmatter {
 				screenTitle
 				infoText
+				seo {
+					description
+					title
+					image {
+						childImageSharp {
+							fluid(quality: 100, maxHeight: 200) {
+								src
+							}
+						}
+					}
+				}
 			}
 		}
 		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {

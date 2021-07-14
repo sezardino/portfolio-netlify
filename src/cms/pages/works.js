@@ -2,7 +2,7 @@ import title from "../parts/title";
 import seo from "../parts/seo";
 
 const works = {
-	label: "Works Screen",
+	label: "Works",
 	name: "works",
 	folder: "content/pages/",
 	file: "content/pages/works.md",

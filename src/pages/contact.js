@@ -4,9 +4,9 @@ import Contact from "../components/screens/contact";
 import Layout from "../layouts";
 
 const ContactPage = ({ data }) => {
-	const { title, socialMedia, contactInfo } = data.markdownRemark.frontmatter;
+	const { title, socialMedia, contactInfo, seo } = data.markdownRemark.frontmatter;
 	return (
-		<Layout>
+		<Layout seo={seo}>
 			<Contact props={{ title, socialMedia, contactInfo }} />
 		</Layout>
 	);
@@ -26,6 +26,17 @@ const query = graphql`
 					content
 					label
 					name
+				}
+				seo {
+					description
+					title
+					image {
+						childImageSharp {
+							fluid(quality: 100, maxHeight: 200) {
+								src
+							}
+						}
+					}
 				}
 			}
 		}
