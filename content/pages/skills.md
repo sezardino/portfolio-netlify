@@ -1,4 +1,8 @@
 ---
+seo:
+  title: Skills
+  description: My skills
+  image: space_mockup.jpg
 screenTitle:
   - My
   - Skills
