@@ -1,4 +1,8 @@
 ---
+seo:
+  title: Contact
+  description: Contact with me
+  image: todo_mockup.jpg
 title: Contact
 contactInfo:
   - name: Telephone
