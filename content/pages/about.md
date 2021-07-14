@@ -1,4 +1,8 @@
 ---
+seo:
+  title: About
+  description: About me
+  image: barber_mockup.jpg
 screenTitle:
   - about
   - me
