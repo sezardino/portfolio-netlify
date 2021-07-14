@@ -7,6 +7,10 @@
 @import "./screens/_screens";
 
 body {
-    min-height: 100vh;
-    position: relative;
+	min-height: 100vh;
+	position: relative;
+}
+
+main {
+	min-height: 100vh;
 }

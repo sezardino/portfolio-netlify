@@ -1,5 +1,7 @@
 .technologies {
 	&__list {
+		margin-top: 10px;
+
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -7,6 +9,7 @@
 
 	&__item {
 		margin-bottom: 10px;
+		font-size: 1.8rem;
 		width: 100%;
 		max-width: 50%;
 		color: $darkThirdFC;

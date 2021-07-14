@@ -6,8 +6,8 @@ import works from "./works";
 import contact from "./contact";
 
 const pages = {
-	name: "landing",
-	label: "Landing",
+	name: "pages",
+	label: "Pages",
 	editor: {
 		preview: false,
 	},

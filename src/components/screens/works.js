@@ -30,24 +30,6 @@ const Works = ({ props, works, worksHandler }) => {
 							</li>
 						);
 					})}
-					{works.map(({ name, mockup }) => {
-						return (
-							<li className="portfolio__item" key={name}>
-								<Link to={"#" + name} onClick={() => worksHandler(name)}>
-									<img src={mockup.childImageSharp.fluid.src} alt={name} />
-								</Link>
-							</li>
-						);
-					})}
-					{works.map(({ name, mockup }) => {
-						return (
-							<li className="portfolio__item" key={name}>
-								<Link to={"#" + name} onClick={() => worksHandler(name)}>
-									<img src={mockup.childImageSharp.fluid.src} alt={name} />
-								</Link>
-							</li>
-						);
-					})}
 				</ul>
 				<div className="scroll scroll--white portfolio__scroll">
 					<div className="scroll__track">

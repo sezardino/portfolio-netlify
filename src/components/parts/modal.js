@@ -8,16 +8,16 @@ const Modal = ({ props, closeHandler }) => {
 	const [view, setView] = useState(true);
 	const show = props ? true : false;
 	const { description, desktop, mobile, name, repo, technologies, view: viewLink } = props;
-	console.log(props);
 	const desktopImg = <img src={desktop.childImageSharp.fluid.src} alt={name} />;
-	const mobileImg = <img src={mobile.childImageSharp.fluid.src} alt={name} />;
+	const mobileImg = <img src={mobile?.childImageSharp.fluid.src} alt={name} />;
 
 	return (
 		<Portal>
 			<div className={`popup ${show ? "popup--show" : ""}`}>
+				<div className="popup__overlay" onClickCapture={closeHandler}></div>
 				<div className=" popup__wrapper">
 					<Link to="/works/" className="popup__button" onClick={closeHandler}></Link>
-					<h2 className="title title--main title--popup popup__title">{name}</h2>
+					<h2 className="popup__title popup__title--mobile">{name}</h2>
 					<div className="view popup__view">
 						<div className="view__wrapper">
 							<div className="view__mockup-wrapper">
@@ -45,15 +45,17 @@ const Modal = ({ props, closeHandler }) => {
 								</div>
 								<span className="button-view__text">Desktop</span>
 							</button>
-							<button
-								className={`button button-view view__button ${!view ? "button-view--active" : ""}`}
-								onClick={() => setView(false)}
-							>
-								<div className="button__image">
-									<img src={mobileIcon} alt="open mobile version" />
-								</div>
-								<span className="button-view__text">Mobile</span>
-							</button>
+							{mobile && (
+								<button
+									className={`button button-view view__button ${!view ? "button-view--active" : ""}`}
+									onClick={() => setView(false)}
+								>
+									<div className="button__image">
+										<img src={mobileIcon} alt="open mobile version" />
+									</div>
+									<span className="button-view__text">Mobile</span>
+								</button>
+							)}
 						</div>
 					</div>
 					<div className="description popup__description">
@@ -84,6 +86,15 @@ const Modal = ({ props, closeHandler }) => {
 										</li>
 									))}
 								</ul>
+							</div>
+						)}
+						{description && (
+							<div className="description__text">
+								<h3 className="title title--technologies">Description</h3>
+								<div
+									className="description__text-body"
+									dangerouslySetInnerHTML={{ __html: description }}
+								></div>
 							</div>
 						)}
 					</div>

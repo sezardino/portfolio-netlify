@@ -1,8 +1,8 @@
 const menu = {
 	label: "Menu",
 	name: "menu",
-	folder: "content/landing/",
-	file: "content/landing/menu.md",
+	folder: "content/pages/",
+	file: "content/pages/menu.md",
 	media_folder: "",
 	public_folder: "",
 	fields: [

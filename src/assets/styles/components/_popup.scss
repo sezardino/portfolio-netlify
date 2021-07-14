@@ -154,12 +154,24 @@
 	top: 0;
 	z-index: 2;
 	height: 100vh;
+	color: #1d1d1d;
 
 	display: flex;
+	background-color: rgba(#1d1d1d, 0.8);
+
+	&__overlay {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
 
 	&__wrapper {
 		padding: 20px 5px;
 		margin: auto;
+		min-height: 80vh;
 		background-color: #ffffff;
 
 		width: 95%;
@@ -168,9 +180,11 @@
 		flex-direction: column;
 
 		position: relative;
+		z-index: 2;
 
 		@include breakpoint-up("md") {
 			flex-direction: row;
+			// align-items: center;
 		}
 	}
 
@@ -189,6 +203,12 @@
 
 	&__title {
 		text-align: center;
+		font-size: 4rem;
+		line-height: 4.2rem;
+		letter-spacing: 0.08rem;
+		text-transform: uppercase;
+		font-weight: 100;
+
 		@include breakpoint-up("md") {
 			display: none;
 		}

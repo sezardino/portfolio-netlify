@@ -1,11 +1,14 @@
-const header = {
+import seo from "../parts/seo";
+
+const contact = {
 	label: "Contact Screen",
 	name: "contact",
-	folder: "content/landing/",
-	file: "content/landing/contact.md",
+	folder: "content/pages/",
+	file: "content/pages/contact.md",
 	media_folder: "",
 	public_folder: "",
 	fields: [
+		seo,
 		{ label: "Title", name: "title", widget: "string", required: false },
 		{
 			label: "Contact Info",
@@ -34,4 +37,4 @@ const header = {
 	],
 };
 
-export default header;
+export default contact;

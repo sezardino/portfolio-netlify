@@ -3,7 +3,7 @@ import CMS from "netlify-cms-app";
 // import services from "./collections/services";
 // import pages from "./pages";
 import settings from "./settings";
-import landing from "./landing";
+import pages from "./pages";
 import project from "./collections/project";
 
 CMS.init({
@@ -24,6 +24,6 @@ CMS.init({
 		// publish_mode: "editorial_workflow",
 		media_folder: "static/img",
 		public_folder: "/img",
-		collections: [settings, landing, project],
+		collections: [settings, pages, project],
 	},
 });

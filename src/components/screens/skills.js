@@ -23,7 +23,9 @@ const Skills = ({ props }) => {
 					{skillsList.map((skill) => (
 						<li className="skills__item" key={`${skill.name}${skill.level}`}>
 							<p className="skills__item-name">{skill.name}</p>
-							<p className="hidden">{skill.description}</p>
+							<div className="skills__tooltip">
+								<p className="skills__item-info">{skill.description}</p>
+							</div>
 							<ul className="dots skills__dots">
 								{Array.from({ length: 5 }).map((_, index) => (
 									<li

@@ -1,13 +1,15 @@
 import title from "../parts/title";
+import seo from "../parts/seo";
 
 const skills = {
 	label: "Skills Screen",
 	name: "skills",
-	folder: "content/landing/",
-	file: "content/landing/skills.md",
+	folder: "content/pages/",
+	file: "content/pages/skills.md",
 	media_folder: "",
 	public_folder: "",
 	fields: [
+		seo,
 		title,
 		{ label: "Info text", name: "infoText", widget: "string", required: false },
 		{

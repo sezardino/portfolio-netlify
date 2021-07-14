@@ -4,7 +4,6 @@ import About from "../components/screens/about";
 import Layout from "../layouts";
 
 const AboutPage = ({ data }) => {
-	console.log(data);
 	const {
 		frontmatter: { screenTitle },
 		html,
