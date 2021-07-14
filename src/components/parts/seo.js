@@ -4,6 +4,9 @@ import useImages from "../../hooks/useImages";
 import useMeta from "../../hooks/useMeta";
 
 const Seo = ({ data }) => {
+	if (!data) {
+		return <p className="visually-hidden">404</p>;
+	}
 	const {
 		title,
 		description,

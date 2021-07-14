@@ -5,6 +5,7 @@ import Seo from "../components/parts/seo";
 import Header from "../components/parts/header";
 import Footer from "../components/parts/footer";
 import { useStaticQuery, graphql } from "gatsby";
+import { useEffect } from "react";
 
 const getMenuData = (menu, { index }) => {
 	const nextPage = menu[index + 1 >= menu.length ? 0 : index + 1];
@@ -16,8 +17,10 @@ const Layout = ({ children, seo }) => {
 	const data = useStaticQuery(query);
 	const menuList = data.markdownRemark.frontmatter.menuList;
 	const currentPage = {};
-	currentPage.slug = window.location.pathname ? window.location.pathname.replaceAll("/", "") : "home";
-	currentPage.index = menuList.findIndex((item) => item.slug === currentPage.slug);
+	useEffect(() => {
+		currentPage.slug = location.pathname ? location.pathname.replaceAll("/", "") : "home";
+		currentPage.index = menuList.findIndex((item) => item.slug === currentPage.slug);
+	}, []);
 	const menuData = getMenuData(menuList, currentPage);
 	const { nextPage, prevPage, menu } = menuData;
 
