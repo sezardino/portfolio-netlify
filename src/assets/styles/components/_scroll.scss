@@ -20,7 +20,12 @@
 				background-color: $darkScrollWork;
 			}
 			&__bar {
+				height: 104px;
 				background-color: $darkScrollWork;
+
+				@include breakpoint-up('lg') {
+					height: 165px;
+				}
 			}
 		}
 	}
@@ -31,7 +36,7 @@
 			}
 			&__bar {
 				width: 7px;
-				height: 173px;
+				height: 188px;
 				background-color: $darkScrollPortfolio;
 			}
 		}

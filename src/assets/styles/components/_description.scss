@@ -1,13 +1,29 @@
 .description {
-	width: 100%;
-	max-width: 320px;
-	margin: 0 auto;
+	@include breakpoint-up("lg") {
+		padding-top: 70px;
+	}
 	&__title {
 		display: none;
+		@include breakpoint-up("md") {
+			display: block;
+			text-align: left;
+		}
+		@include breakpoint-up("lg") {
+			display: block;
+			text-align: left;
+			padding-bottom: 0;
+		}
 	}
 	&__buttons {
 		margin-top: 35px;
 		width: 100%;
+		@include breakpoint-up("md") {
+			margin-top: 30px;
+			display: flex;
+		}
+		@include breakpoint-up("lg") {
+			margin-top: 30px;
+		}
 	}
 
 	&__button {
@@ -15,6 +31,20 @@
 		margin-bottom: 15px;
 
 		font-size: 1.8rem;
+		@include breakpoint-up("md") {
+			margin: 0;
+			margin-right: 15px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		@include breakpoint-up("lg") {
+			margin: 0;
+			margin-right: 15px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -22,6 +52,12 @@
 
 	&__technologies {
 		margin-top: 35px;
+		@include breakpoint-up("md") {
+			margin-top: 70px;
+		}
+		@include breakpoint-up("lg") {
+			margin-top: 70px;
+		}
 	}
 
 	&__text {
@@ -33,59 +69,5 @@
 	&__text-body {
 		font-size: 1.8rem;
 		line-height: 2.1rem;
-	}
-}
-
-@media (min-width: $tableWidth) {
-	.description {
-		max-width: 416px;
-		&__title {
-			display: block;
-			text-align: left;
-		}
-		&__buttons {
-			margin-top: 30px;
-			width: 100%;
-			display: flex;
-		}
-
-		&__button {
-			margin: 0;
-			margin-right: 15px;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-
-		&__technologies {
-			margin-top: 70px;
-		}
-	}
-}
-@media (min-width: $desktopWidth) {
-	.description {
-		padding-top: 70px;
-		max-width: 516px;
-		&__title {
-			display: block;
-			text-align: left;
-			padding-bottom: 0;
-		}
-		&__buttons {
-			margin-top: 30px;
-			width: 100%;
-		}
-
-		&__button {
-			margin: 0;
-			margin-right: 15px;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-
-		&__technologies {
-			margin-top: 70px;
-		}
 	}
 }

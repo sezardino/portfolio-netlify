@@ -4,7 +4,9 @@ import Layout from "../layouts";
 const NotFoundPage = ({ data }) => {
 	return (
 		<Layout>
-			<h1>404</h1>
+			<section className="about container">
+				<h1 className="title title--main title--about about__title">404</h1>
+			</section>
 		</Layout>
 	);
 };

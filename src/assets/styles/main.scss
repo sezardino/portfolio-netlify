@@ -14,3 +14,21 @@ body {
 main {
 	min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(84, 84, 85);
+	border-radius: 2px;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+::-webkit-scrollbar-corner {
+	background-color: rgba(0, 0, 0, 0.7);
+}

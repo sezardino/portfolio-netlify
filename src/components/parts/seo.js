@@ -3,22 +3,22 @@ import { Helmet } from "react-helmet";
 import useImages from "../../hooks/useImages";
 import useMeta from "../../hooks/useMeta";
 
+const OpenGraph = (data) => {
+	return (
+		<>
+			<meta property="og:type" content="business.business" />
+			<meta property="og:title" content={data.title} />
+			<meta property="og:url" content="/" />
+			<meta property="og:description" content={data.description} />
+			<meta property="og:image" content={data.image.childImageSharp.fluid.src} />
+		</>
+	);
+};
+
 const Seo = ({ data }) => {
-	if (!data) {
-		return <p className="visually-hidden">404</p>;
-	}
-	const {
-		title,
-		description,
-		image: {
-			childImageSharp: {
-				fluid: { src: ogImg },
-			},
-		},
-	} = data;
 	const { appleIcon, fav16, fav32 } = useImages();
 	const { siteName, siteDesc, keywords } = useMeta();
-	const siteTitle = title ? `${title} | ${siteName}` : siteName;
+	const siteTitle = data?.title ? `${data?.title} | ${siteName}` : siteName;
 
 	return (
 		<Helmet title="some title">
@@ -33,13 +33,11 @@ const Seo = ({ data }) => {
 
 			<link rel="mask-icon" href={appleIcon.publicURL} color="#ff4400" />
 
-			<meta name="theme-color" content="#1d1d1d" />
-
-			<meta property="og:type" content="business.business" />
-			<meta property="og:title" content={data.title} />
-			<meta property="og:url" content="/" />
-			<meta property="og:description" content={description} />
-			<meta property="og:image" content={ogImg} />
+			{data && <meta property="og:type" content="business.business" />}
+			{data && <meta property="og:title" content={data.title} />}
+			{data && <meta property="og:url" content="/" />}
+			{data && <meta property="og:description" content={data.description} />}
+			{data && <meta property="og:image" content={data.image.childImageSharp.fluid.src} />}
 		</Helmet>
 	);
 };

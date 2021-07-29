@@ -1,25 +1,31 @@
 import React from "react";
-import { Link } from "gatsby";
+import Link from "./link";
 
-const Footer = ({ menu, currentPage }) => {
-	const { menu: menuList, prevPage, nextPage } = menu;
+const Footer = ({ menu, links, currentPage }) => {
+	const { next, prev } = links;
 	return (
 		<footer className="footer container">
-			<Link to={"/" + prevPage?.slug} className="button button-arrow button-arrow--prev footer__prev">
-				<span className="hidden">To {prevPage?.label}</span>
-			</Link>
+			<Link
+				slug={prev?.slug}
+				label={`To ${prev?.label}`}
+				hidden={true}
+				classes="button button-arrow button-arrow--prev footer__prev"
+			/>
 			<div className="footer__line">
 				<div
 					className="footer__current"
 					style={{
-						maxWidth: `${100 / menuList.length}%`,
-						left: currentPage.index * (100 / menuList.length) + "%",
+						maxWidth: `${100 / menu.length}%`,
+						left: currentPage.index * (100 / menu.length) + "%",
 					}}
 				></div>
 			</div>
-			<Link to={"/" + nextPage?.slug} className="button button-arrow button-arrow--next footer__next">
-				<span className="hidden">To {nextPage?.label}</span>
-			</Link>
+			<Link
+				slug={next?.slug}
+				label={`To ${next?.label}`}
+				hidden={true}
+				classes="button button-arrow button-arrow--next footer__next"
+			/>
 		</footer>
 	);
 };
