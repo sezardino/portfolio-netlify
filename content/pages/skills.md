@@ -9,7 +9,8 @@ screenTitle:
 infoText: Hover, to see more information
 skillsList:
   - name: HTML
-    description: description for html skill
+    description: description for html skill f fqwf qwf qf qwf qwf qf qwf qf qwf qwf
+      q q fqwf qwf q fqw fqw fqw fqw fqw fqw fqw fq fqfqw qf qwf q
     level: "4"
   - name: CSS
     description: description for css skill
