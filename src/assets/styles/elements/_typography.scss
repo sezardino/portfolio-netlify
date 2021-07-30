@@ -2,13 +2,9 @@
 	text-transform: uppercase;
 	color: $darkMainFC;
 	font-weight: 400;
-
 	cursor: default;
 
 	&--main {
-		// padding-left: 25px;
-		// padding-top: 12px;
-		// padding-bottom: 12px;
 		border-left: 1px solid $darkThirdBg;
 
 		font-size: 40px;
@@ -20,23 +16,15 @@
 		color: $darkMainFC;
 
 		@include breakpoint-up("md") {
-			// padding: 0;
-			// padding-right: 20px;
-			// padding-bottom: 12px;
 			border-left: none;
 
 			font-size: 106px;
 			line-height: 109px;
 
 			text-align: right;
-
-			// min-width: 315px;
 			.row {
 				display: block;
 			}
-		}
-		@include breakpoint-up("lg") {
-			// padding-right: 47px;
 		}
 	}
 
@@ -48,6 +36,33 @@
 
 		letter-spacing: 0.02em;
 		display: block;
+
+		@include breakpoint-up("md") {
+			font-size: 80px;
+			line-height: 83px;
+		}
+		@include breakpoint-up("lg") {
+			font-size: 103px;
+			line-height: 108px;
+		}
+	}
+
+	&--surname {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 200;
+		font-size: 33px;
+		line-height: 47px;
+		letter-spacing: 0.02em;
+		display: block;
+
+		@include breakpoint-up("md") {
+			font-size: 70px;
+			line-height: 73px;
+		}
+		@include breakpoint-up("lg") {
+			font-size: 89px;
+			line-height: 93px;
+		}
 	}
 
 	&--about {
@@ -62,7 +77,6 @@
 		@include breakpoint-up("lg") {
 			font-size: 118px;
 			line-height: 125px;
-			padding-right: 0;
 		}
 		@include breakpoint-up("xl") {
 			font-size: 140px;
@@ -70,21 +84,21 @@
 		}
 	}
 
-	&--surname {
-		font-family: "Montserrat", sans-serif;
-		font-weight: 200;
-		font-size: 33px;
-		line-height: 47px;
-		letter-spacing: 0.02em;
-		display: block;
-	}
-
 	&--popup {
-		padding-left: 0;
-		padding-top: 0;
-		padding-bottom: 0;
 		border: none;
 		color: $darkThirdFC;
+
+		@include breakpoint-up("md") {
+			font-size: 50px;
+			line-height: 53px;
+
+			letter-spacing: 0.08em;
+		}
+		@include breakpoint-up("lg") {
+			font-size: 60px;
+			font-size: 60px;
+			line-height: 63px;
+		}
 	}
 
 	&--technologies {
@@ -95,10 +109,52 @@
 		letter-spacing: 0.1em;
 
 		color: $darkThirdFC;
+
+		@include breakpoint-up("md") {
+			font-size: 20px;
+			line-height: 25px;
+		}
+		@include breakpoint-up("lg") {
+			font-size: 25px;
+			line-height: 47px;
+		}
 	}
 
 	&--skills {
-		padding-left: 10px;
+		@include breakpoint-up("md") {
+			font-size: 67px;
+			line-height: 70px;
+		}
+	}
+	&--portfolio {
+		@include breakpoint-up("md") {
+			font-size: 80px;
+			line-height: 83px;
+		}
+	}
+
+	&--contact {
+		@include breakpoint-up("md") {
+			max-width: 100%;
+			font-size: 75px;
+			line-height: 80px;
+		}
+		@include breakpoint-up("md") {
+			font-size: 110px;
+			line-height: 116px;
+		}
+	}
+	&__letter {
+		@include breakpoint-up("md") {
+			transition: 1s all;
+			display: inline-block;
+			cursor: default;
+			&--scale {
+				&:hover {
+					transform: scale(1.5);
+				}
+			}
+		}
 	}
 }
 
@@ -110,6 +166,18 @@
 
 	color: $darkSecondaryFC;
 
+	@include breakpoint-up("md") {
+		font-size: 22px;
+		line-height: 27px;
+	}
+	@include breakpoint-up("lg") {
+	}
+
+	&--hero {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
 	&--about {
 		font-size: 18px;
 		line-height: 33px;
@@ -117,117 +185,12 @@
 		letter-spacing: 0.1em;
 
 		color: $darkSecondaryFC;
-	}
-}
 
-@media (min-width: $tableWidth) {
-	.title {
-		&--name {
-			font-size: 80px;
-			line-height: 83px;
-		}
-
-		&--surname {
-			font-size: 70px;
-			line-height: 73px;
-		}
-
-		&--main {
-		}
-
-		&--skills {
-			font-size: 67px;
-			line-height: 70px;
-		}
-
-		&--portfolio {
-			font-size: 80px;
-			line-height: 83px;
-		}
-
-		&--contact {
-			max-width: 100%;
-			padding-right: 0;
-			font-size: 75px;
-			line-height: 80px;
-		}
-
-		&--popup {
-			padding-right: 0;
-			font-size: 50px;
-			line-height: 53px;
-
-			letter-spacing: 0.08em;
-
-			color: $darkThirdFC;
-		}
-		&--technologies {
-			font-size: 20px;
-			line-height: 25px;
-
-			color: $darkThirdFC;
-		}
-
-		&__letter {
-			transition: 1s all;
-			display: inline-block;
-			cursor: default;
-			&--scale {
-				&:hover {
-					transform: scale(1.5);
-				}
-			}
-		}
-	}
-
-	.text {
-		font-size: 22px;
-		line-height: 27px;
-
-		&--hero {
-			font-size: 18px;
-			line-height: 22px;
-		}
-
-		&--about {
-			// padding-left: 65px;
-			// max-width: 548px;
+		@include breakpoint-up("md") {
 			font-size: 17px;
 			line-height: 32px;
 		}
-	}
-}
-
-@media (min-width: $desktopWidth) {
-	.title {
-		&--name {
-			font-size: 103px;
-			line-height: 108px;
-		}
-
-		&--surname {
-			font-size: 89px;
-			line-height: 93px;
-		}
-
-		&--main {
-		}
-
-		&--popup {
-			padding-right: 0;
-			font-size: 60px;
-			font-size: 60px;
-			line-height: 63px;
-		}
-		&--technologies {
-			font-size: 25px;
-			line-height: 47px;
-		}
-
-		&--contact {
-			padding-right: 0;
-			font-size: 110px;
-			line-height: 116px;
+		@include breakpoint-up("lg") {
 		}
 	}
 }

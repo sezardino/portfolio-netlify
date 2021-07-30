@@ -23,8 +23,14 @@
 				height: 104px;
 				background-color: $darkScrollWork;
 
-				@include breakpoint-up('lg') {
+				@include breakpoint-up("lg") {
+					height: 136px;
+				}
+				@include breakpoint-up("xl") {
 					height: 165px;
+				}
+				@include breakpoint-up("xxl") {
+					height: 196px;
 				}
 			}
 		}

@@ -3,18 +3,6 @@ import { Helmet } from "react-helmet";
 import useImages from "../../hooks/useImages";
 import useMeta from "../../hooks/useMeta";
 
-const OpenGraph = (data) => {
-	return (
-		<>
-			<meta property="og:type" content="business.business" />
-			<meta property="og:title" content={data.title} />
-			<meta property="og:url" content="/" />
-			<meta property="og:description" content={data.description} />
-			<meta property="og:image" content={data.image.childImageSharp.fluid.src} />
-		</>
-	);
-};
-
 const Seo = ({ data }) => {
 	const { appleIcon, fav16, fav32 } = useImages();
 	const { siteName, siteDesc, keywords } = useMeta();

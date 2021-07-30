@@ -1,7 +1,4 @@
 import CMS from "netlify-cms-app";
-// import posts from "./collections/posts";
-// import services from "./collections/services";
-// import pages from "./pages";
 import settings from "./settings";
 import pages from "./pages";
 import project from "./collections/project";
@@ -21,7 +18,7 @@ CMS.init({
 			uploadMedia: "[skip ci] Upload “{{path}}”",
 			deleteMedia: "[skip ci] Delete “{{path}}”",
 		},
-		// publish_mode: "editorial_workflow",
+		publish_mode: "editorial_workflow",
 		media_folder: "static/img",
 		public_folder: "/img",
 		collections: [settings, pages, project],

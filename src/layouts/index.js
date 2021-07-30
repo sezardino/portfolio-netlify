@@ -20,20 +20,24 @@ const Layout = ({ children, seo }) => {
 
 	const [links, setLinks] = useState({});
 
-	let currentPage = {};
 	useEffect(() => {
-		currentPage.slug = window.location.pathname ? window.location.pathname.replaceAll("/", "") : "home";
-		currentPage.index = menuList.findIndex((item) => item.slug === currentPage.slug);
+		const slug = window.location.pathname ? window.location.pathname.replaceAll("/", "") : "home";
+		const index = menuList.findIndex((item) => item.slug === slug);
 
-		const { next, prev } = getMenuData(menuList, currentPage.index);
-		setLinks({ next, prev });
+		const current = {
+			slug,
+			index,
+		};
+
+		const { next, prev } = getMenuData(menuList, index);
+		setLinks({ next, prev, current });
 	}, []);
 	return (
 		<>
-			<Header menu={menuList} currentPage={currentPage} />
+			<Header menu={menuList} />
 			<Seo data={seo} />
 			<main>{children}</main>
-			{seo && <Footer menu={menuList} links={links} currentPage={currentPage} />}
+			{seo && <Footer menu={menuList} links={links} />}
 		</>
 	);
 };

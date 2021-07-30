@@ -33,12 +33,6 @@
 		@include breakpoint-up("lg") {
 			width: auto;
 		}
-		// @include breakpoint-up("lg") {
-		// 	max-width: 552px;
-		// }
-		// @include breakpoint-up("xxl") {
-		// 	max-width: 616px;
-		// }
 	}
 
 	&__mockup {
@@ -53,16 +47,20 @@
 			overflow: hidden;
 			border-radius: 20px;
 
-			@include breakpoint-up("lg") {
-				width: 130px;
+			@include breakpoint-up("md") {
+				width: 115px;
 				height: 208px;
 			}
 			@include breakpoint-up("lg") {
-				width: 180px;
+				width: 145px;
+				height: 273px;
+			}
+			@include breakpoint-up("xl") {
+				width: 170px;
 				height: 330px;
 			}
 			@include breakpoint-up("xxl") {
-				width: 180px;
+				width: 190px;
 				height: 392px;
 			}
 
@@ -71,19 +69,6 @@
 				left: 0;
 				max-width: 100%;
 				max-height: 100%;
-
-				// @include breakpoint-up("md") {
-				// 	top: 0;
-				// 	left: 0;
-				// 	max-width: 122px;
-				// 	max-height: 200px;
-				// }
-				// @include breakpoint-up("lg") {
-				// 	top: 0px;
-				// 	left: 0px;
-				// 	max-width: 172px;
-				// 	max-height: 322px;
-				// }
 			}
 		}
 

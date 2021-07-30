@@ -17,6 +17,8 @@
 		@include breakpoint-up("md") {
 			min-width: 230px;
 			padding: 0;
+		}
+		@include breakpoint-up("lg") {
 			padding-right: 20px;
 		}
 	}

@@ -19,7 +19,6 @@ const useScroll = (elementRef) => {
 
 	useEffect(() => {
 		elementRef.current.addEventListener("scroll", scrollHandler);
-		return () => elementRef.current.removeEventListener("scroll", scrollHandler);
 	}, []);
 
 	return scroll;
