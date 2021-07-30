@@ -4,10 +4,11 @@ import { createRef } from "react";
 import useScroll from "../../hooks/useScroll";
 
 const Works = ({ props, works, worksHandler }) => {
+	console.log(props);
 	const listRef = createRef(null);
 	const scrollPosition = useScroll(listRef);
 
-	const { infoText, screenTitle } = props;
+	const { html, screenTitle } = props;
 	return (
 		<section className="portfolio container">
 			<h2 className="title title--main title--portfolio portfolio__title">
@@ -24,7 +25,7 @@ const Works = ({ props, works, worksHandler }) => {
 				})}
 			</h2>
 			<div className="portfolio__wrapper ">
-				<p className="portfolio__info-text">{infoText}</p>
+				<div className="portfolio__info-text" dangerouslySetInnerHTML={{ __html: html }}></div>
 				<div className="portfolio__list-wrapper">
 					<ul className="portfolio__list" ref={listRef}>
 						{works.map(({ name, mockup }) => {

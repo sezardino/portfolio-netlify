@@ -1,7 +1,5 @@
-import noPage from "./404";
 import images from "./images";
 import site from "./site";
-import og from "./og";
 
 const pages = {
 	label: "Settings",
@@ -9,7 +7,7 @@ const pages = {
 	editor: {
 		preview: false,
 	},
-	files: [site, og, images, noPage],
+	files: [site, images],
 };
 
 export default pages;

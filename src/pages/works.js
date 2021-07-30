@@ -31,7 +31,7 @@ const worksDataTransform = (array) => {
 const WorksPage = ({ data }) => {
 	const [currentWork, setCurrentWork] = useState(null);
 	const { allMarkdownRemark: worksData, markdownRemark: pageData } = data;
-	const pageProps = pageData.frontmatter;
+	const pageProps = { html: pageData.html, ...pageData.frontmatter };
 	const works = worksDataTransform(worksData.edges);
 
 	useEffect(() => {
@@ -51,7 +51,7 @@ const WorksPage = ({ data }) => {
 	};
 	return (
 		<Layout seo={pageProps.seo}>
-			<Works props={pageProps} works={works} worksHandler={worksHandler} />
+			<Works props={{ ...pageProps }} works={works} worksHandler={worksHandler} />
 			{currentWork && <Modal props={currentWork} closeHandler={closeHandler} />}
 		</Layout>
 	);
@@ -60,9 +60,9 @@ const WorksPage = ({ data }) => {
 const query = graphql`
 	query {
 		markdownRemark(fileAbsolutePath: { regex: "/works.md/" }) {
+			html
 			frontmatter {
 				screenTitle
-				infoText
 				seo {
 					description
 					title
@@ -79,6 +79,7 @@ const query = graphql`
 		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
 			edges {
 				node {
+					html
 					frontmatter {
 						title
 						mockup {
@@ -112,7 +113,6 @@ const query = graphql`
 							technology
 						}
 					}
-					html
 				}
 			}
 		}
