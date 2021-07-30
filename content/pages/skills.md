@@ -10,29 +10,25 @@ infoText: Hover, to see more information
 skillsList:
   - name: HTML
     description: Advanced knowlage of html5, accessibility, html5 standards, semantic
-    level: "0"
+    level: "5"
   - name: CSS
     description: "Advanced knowledge of modern css, like: flex-box, grid, css properties"
-    level: "1"
+    level: "5"
   - name: SCSS
     description: "Advanced knowledge of scss, like: mixins, variables..."
-    level: "2"
+    level: "5"
   - name: JavaScript
     description: "Advanced knowledge of JavaScript, like: es6, object methods, array
       methods, MVC, MVP, async/await, try/catch, fetch"
-    level: "3"
+    level: "5"
   - name: TypeScript
     description: "Basic knowledge of TS, like: types, interfaces, declarations"
-    level: "4"
+    level: "3"
   - name: React
     description: "More than basic knowledge of ReactJS ecosystem, like: router,
       redux, hooks, hoks, class components, and functional components, and more
       ..."
-    level: "5"
-  - name: Vue
-    description: "More than basic knowledge of VueJS ecosystem, like: router, vuex,
-      optionsAPI, provide/inject, and more ..."
-    level: "3"
+    level: "4"
   - name: Redux
     description: Knowlage of Redux, creating store, reducers, useDispatch,
       useSelector, and connect functions
@@ -40,13 +36,17 @@ skillsList:
   - name: MobX
     description: Basic knowlage of MobX
     level: "3"
+  - name: Vue
+    description: "More than basic knowledge of VueJS ecosystem, like: router, vuex,
+      optionsAPI, provide/inject, and more ..."
+    level: "4"
   - name: Git
     description: "Advanced knowlage of git, in console, vsCode extension, desktop
       app(gitHub), like: commits, create branches, pullrequests, conflicts."
     level: "4"
   - name: BEM
     description: Knowlage about bem metodology, block, element, modifier
-    level: "4"
+    level: "5"
   - name: Gatsby
     description: Basic knowlage of Gatsby ecosystem, and jamstack(this site created
       on jamstack, gatsby, netlify and netlifyCMS)
@@ -60,7 +60,7 @@ skillsList:
     level: "2"
   - name: WordPress
     description: Advanced knowlage of WordPress ekosystem, php, twig, plugins, themes
-    level: "3"
+    level: "4"
   - name: English
     description: Advanced knowlage of English language, can read and write, but talk
       with somebody is difficult
