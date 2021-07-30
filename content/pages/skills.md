@@ -9,23 +9,25 @@ screenTitle:
 infoText: Hover, to see more information
 skillsList:
   - name: HTML
-    description: description for html skill f fqwf qwf qf qwf qwf qf qwf qf qwf qwf
-      q q fqwf qwf q fqw fqw fqw fqw fqw fqw fqw fq fqfqw qf qwf q
-    level: "4"
+    description: Advanced knowlage of html5, accessibility, html5 standards, semantic
+    level: "0"
   - name: CSS
-    description: description for css skill
+    description: "Advanced knowledge of modern css, like: flex-box, grid, css properties"
     level: "4"
   - name: SCSS
-    description: description for scss skill
+    description: "Advanced knowledge of scss, like: mixins, variables..."
     level: "4"
   - name: JavaScript
-    description: description for JS skill
+    description: "Advanced knowledge of JavaScript, like: es6, object methods, array
+      methods, MVC, MVP"
     level: "4"
   - name: TypeScript
-    description: description for ts skill
+    description: "Basic knowledge of TS, like: types, interfaces, declarations"
     level: "3"
   - name: React
-    description: description for react skill
+    description: "More than basic knowledge of ReactJS ecosystem, like: router,
+      redux, hooks, hoks, class components, and functional components, and more
+      ..."
     level: "4"
   - name: Vue
     description: description for vue skill
