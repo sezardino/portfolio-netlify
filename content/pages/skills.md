@@ -13,22 +13,22 @@ skillsList:
     level: "0"
   - name: CSS
     description: "Advanced knowledge of modern css, like: flex-box, grid, css properties"
-    level: "4"
+    level: "1"
   - name: SCSS
     description: "Advanced knowledge of scss, like: mixins, variables..."
-    level: "4"
+    level: "2"
   - name: JavaScript
     description: "Advanced knowledge of JavaScript, like: es6, object methods, array
       methods, MVC, MVP, async/await, try/catch, fetch"
-    level: "4"
+    level: "3"
   - name: TypeScript
     description: "Basic knowledge of TS, like: types, interfaces, declarations"
-    level: "3"
+    level: "4"
   - name: React
     description: "More than basic knowledge of ReactJS ecosystem, like: router,
       redux, hooks, hoks, class components, and functional components, and more
       ..."
-    level: "4"
+    level: "5"
   - name: Vue
     description: "More than basic knowledge of VueJS ecosystem, like: router, vuex,
       optionsAPI, provide/inject, and more ..."
