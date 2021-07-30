@@ -7,4 +7,4 @@ screenTitle:
   - Portf
   - olio
 ---
-Want to see more my projects, you can see on my [GitHub reposytory](https://github.com/sezardino)
+Want to see more my projects, you can see o my [GitHub reposytory](https://github.com/sezardino)
