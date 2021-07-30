@@ -9,58 +9,66 @@ screenTitle:
 infoText: Hover, to see more information
 skillsList:
   - name: HTML
-    description: description for html skill f fqwf qwf qf qwf qwf qf qwf qf qwf qwf
-      q q fqwf qwf q fqw fqw fqw fqw fqw fqw fqw fq fqfqw qf qwf q
-    level: "4"
+    description: Advanced knowlage of html5, accessibility, html5 standards, semantic
+    level: "0"
   - name: CSS
-    description: description for css skill
+    description: "Advanced knowledge of modern css, like: flex-box, grid, css properties"
     level: "4"
   - name: SCSS
-    description: description for scss skill
+    description: "Advanced knowledge of scss, like: mixins, variables..."
     level: "4"
   - name: JavaScript
-    description: description for JS skill
+    description: "Advanced knowledge of JavaScript, like: es6, object methods, array
+      methods, MVC, MVP, async/await, try/catch, fetch"
     level: "4"
   - name: TypeScript
-    description: description for ts skill
+    description: "Basic knowledge of TS, like: types, interfaces, declarations"
     level: "3"
   - name: React
-    description: description for react skill
+    description: "More than basic knowledge of ReactJS ecosystem, like: router,
+      redux, hooks, hoks, class components, and functional components, and more
+      ..."
     level: "4"
   - name: Vue
-    description: description for vue skill
+    description: "More than basic knowledge of VueJS ecosystem, like: router, vuex,
+      optionsAPI, provide/inject, and more ..."
     level: "3"
   - name: Redux
-    description: description for redux skill
+    description: Knowlage of Redux, creating store, reducers, useDispatch,
+      useSelector, and connect functions
     level: "4"
   - name: MobX
-    description: description for mobx skill
+    description: Basic knowlage of MobX
     level: "3"
   - name: Git
-    description: description for git skill
+    description: "Advanced knowlage of git, in console, vsCode extension, desktop
+      app(gitHub), like: commits, create branches, pullrequests, conflicts."
     level: "4"
   - name: BEM
-    description: description for bem skill
+    description: Knowlage about bem metodology, block, element, modifier
     level: "4"
   - name: Gatsby
-    description: description for gatsby skill
+    description: Basic knowlage of Gatsby ecosystem, and jamstack(this site created
+      on jamstack, gatsby, netlify and netlifyCMS)
     level: "4"
   - name: Webpack
-    description: description for webpack skill
+    description: "Basic knowlage of webpack 5, like: loaders, plugins, devServer"
     level: "3"
   - name: React tests
-    description: description for react tests skill
+    description: Know that, tests in react in great thing, create tests, but long
+      time, ago(google it's good helper)
     level: "2"
   - name: WordPress
-    description: description for wp skill
+    description: Advanced knowlage of WordPress ekosystem, php, twig, plugins, themes
     level: "3"
   - name: English
-    description: description for eng skill
+    description: Advanced knowlage of English language, can read and write, but talk
+      with somebody is difficult
     level: "3"
   - name: Polish
-    description: description for polish skill
+    description: Advanced knowlage of Polish language
     level: "5"
   - name: Russian
-    description: description for ru skill
+    description: Advanced knowlage of Russian language
     level: "5"
 ---
