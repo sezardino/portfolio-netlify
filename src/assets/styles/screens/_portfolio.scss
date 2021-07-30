@@ -119,6 +119,10 @@
 			cursor: default;
 		}
 
+		a {
+			text-decoration: underline;
+		}
+
 		@include breakpoint-up("md") {
 			margin-top: 0;
 			padding-left: 0;
