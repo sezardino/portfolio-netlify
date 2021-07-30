@@ -29,7 +29,7 @@ const Skills = ({ props }) => {
 							<ul className="dots skills__dots">
 								{Array.from({ length: 5 }).map((_, index) => (
 									<li
-										className={`dots__item ${index <= skill.level ? "dots__item--active" : ""}`}
+										className={`dots__item ${index < skill.level ? "dots__item--active" : ""}`}
 										key={index}
 									></li>
 								))}

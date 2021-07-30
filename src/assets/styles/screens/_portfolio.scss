@@ -114,7 +114,12 @@
 
 		margin-top: 10px;
 		padding-left: 10px;
-		@include breakpoint-up('md') {
+
+		p {
+			cursor: default;
+		}
+
+		@include breakpoint-up("md") {
 			margin-top: 0;
 			padding-left: 0;
 			margin-bottom: 10px;
