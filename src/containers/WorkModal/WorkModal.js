@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Portal from "../../components/Portal/Portal";
+import Portal from "../../components/Portal";
 import ModalDescription from "../../components/WorkModal/ModalDescription/ModalDescription";
 import ModalView from "../../components/WorkModal/ModalView/ModalView";
 
