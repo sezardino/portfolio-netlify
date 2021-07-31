@@ -2,8 +2,8 @@
 title: Match game
 mockup: unnamed.jpg
 projectImages:
-  desktopImage: unnamed.jpg
-  mobileImage: unnamed.jpg
+  desktopImage: sezardino-match-game.netlify.app_.png
+  mobileImage: ""
 projectLinks:
   repository: view
   view: view
