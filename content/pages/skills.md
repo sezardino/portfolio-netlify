@@ -49,9 +49,11 @@ skillsList:
     level: "4"
   - name: NodeJS
     description: "Basic usage of nodejs, like: path, fs, ..."
+    level: "2"
   - name: Express
     description: "Basic usage of node framework express, like: create server,
       routes, controllers, models"
+    level: "3"
   - name: Git
     description: "Advanced knowlage of git, in console, vsCode extension, desktop
       app(gitHub), like: commits, create branches, pullrequests, conflicts."
