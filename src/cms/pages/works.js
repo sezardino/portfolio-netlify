@@ -21,9 +21,9 @@ const works = {
 				name: "projects",
 				widget: "relation",
 				collection: "projects",
-				search_fields: ["title"],
+				search_fields: ["title", "mockup"],
 				value_field: "title",
-				display_fields: ["title", "mockup"],
+				display_fields: ["title"],
 			},
 		},
 		// {
