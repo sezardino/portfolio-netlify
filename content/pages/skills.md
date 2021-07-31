@@ -17,6 +17,9 @@ skillsList:
   - name: SCSS
     description: "Advanced knowledge of scss, like: mixins, variables..."
     level: "5"
+  - name: BEM
+    description: Knowlage about bem metodology, block, element, modifier
+    level: "5"
   - name: JavaScript
     description: "Advanced knowledge of JavaScript, like: es6, object methods, array
       methods, MVC, MVP, async/await, try/catch, fetch"
@@ -40,16 +43,18 @@ skillsList:
     description: "More than basic knowledge of VueJS ecosystem, like: router, vuex,
       optionsAPI, provide/inject, and more ..."
     level: "4"
-  - name: Git
-    description: "Advanced knowlage of git, in console, vsCode extension, desktop
-      app(gitHub), like: commits, create branches, pullrequests, conflicts."
-    level: "4"
-  - name: BEM
-    description: Knowlage about bem metodology, block, element, modifier
-    level: "5"
   - name: Gatsby
     description: Basic knowlage of Gatsby ecosystem, and jamstack(this site created
       on jamstack, gatsby, netlify and netlifyCMS)
+    level: "4"
+  - name: NodeJS
+    description: "Basic usage of nodejs, like: path, fs, ..."
+  - name: Express
+    description: "Basic usage of node framework express, like: create server,
+      routes, controllers, models"
+  - name: Git
+    description: "Advanced knowlage of git, in console, vsCode extension, desktop
+      app(gitHub), like: commits, create branches, pullrequests, conflicts."
     level: "4"
   - name: Webpack
     description: "Basic knowlage of webpack 5, like: loaders, plugins, devServer"
