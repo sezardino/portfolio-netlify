@@ -8,7 +8,20 @@ const works = {
 	file: "content/pages/works.md",
 	media_folder: "",
 	public_folder: "",
-	fields: [seo, title, { label: "Info text", name: "body", widget: "markdown" }],
+	fields: [
+		seo,
+		title,
+		{ label: "Info text", name: "body", widget: "markdown" },
+		{
+			label: "Projects",
+			name: "projects",
+			widget: "relation",
+			collection: "projects",
+			search_fields: ["title"],
+			value_field: "title",
+			display_fields: ["title"],
+		},
+	],
 };
 
 export default works;
