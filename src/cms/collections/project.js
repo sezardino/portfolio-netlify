@@ -19,6 +19,8 @@ const project = {
 			required: false,
 		},
 		{ label: "Mockup", name: "mockup", widget: "image", required: false },
+		{ label: "Show", name: "show", widget: "select", options: ["true", "false"] },
+		{ label: "Order", name: "order", widget: "number" },
 		{
 			label: "Project Images",
 			name: "projectImages",
