@@ -15,12 +15,26 @@ const works = {
 		{
 			label: "Projects",
 			name: "projects",
-			widget: "relation",
-			collection: "projects",
-			search_fields: ["title"],
-			value_field: "title",
-			display_fields: ["title"],
+			widget: "list",
+			field: {
+				label: "Projects",
+				name: "projects",
+				widget: "relation",
+				collection: "projects",
+				search_fields: ["title"],
+				value_field: "title",
+				display_fields: ["title"],
+			},
 		},
+		// {
+		// 	label: "Projects",
+		// 	name: "projects",
+		// 	widget: "relation",
+		// 	collection: "projects",
+		// 	search_fields: ["title"],
+		// 	value_field: "title",
+		// 	display_fields: ["title"],
+		// },
 	],
 };
 
