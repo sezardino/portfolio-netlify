@@ -17,5 +17,16 @@ projects:
   - Distance
   - English for kids
   - Filmed
+  - Finance
+  - Food
+  - Food
+  - Gatsby starter
+  - Keksogram
+  - Landscape
+  - Match game
+  - Netcliks
+  - Personal Trainer Website
+  - Photo Filter
+  - Sound App
 ---
 Want to see more my projects, you can see on my [GitHub reposytory](https://github.com/sezardino)
