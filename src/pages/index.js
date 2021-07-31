@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../layouts";
-import Home from "../components/screens/home";
+
+import Layout from "@/layouts";
+import Home from "@/containers/HomePage";
 
 const HomePage = ({ data }) => {
 	const { image, screenTitle, subtitle, title, seo } = data.markdownRemark.frontmatter;

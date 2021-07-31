@@ -22,13 +22,17 @@
 	&__wrapper {
 		padding: 20px 5px;
 		margin: auto;
-		min-height: 80vh;
 		background-color: #ffffff;
 
 		width: 95%;
 		max-width: 1440px;
 		position: relative;
 		z-index: 2;
+
+		@include breakpoint-up("md") {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
 	}
 
 	&__container {
@@ -71,6 +75,27 @@
 
 	&__view {
 		margin-top: 25px;
+		justify-content: space-between;
+		height: 353px;
+		@include breakpoint-up("sm") {
+			height: 378px;
+		}
+		@include breakpoint-up("md") {
+			height: initial;
+			justify-content: initial;
+			width: 100%;
+			max-width: 350px;
+		}
+		@include breakpoint-up("lg") {
+			max-width: 450px;
+			margin: 0;
+		}
+		@include breakpoint-up("xl") {
+			max-width: 552px;
+		}
+		@include breakpoint-up("fhd") {
+			max-width: 660px;
+		}
 	}
 
 	&__description {

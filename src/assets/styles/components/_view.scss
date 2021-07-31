@@ -47,6 +47,10 @@
 			overflow: hidden;
 			border-radius: 20px;
 
+			@include breakpoint-up("sm") {
+				width: 145px;
+				height: 275px;
+			}
 			@include breakpoint-up("md") {
 				width: 115px;
 				height: 208px;
@@ -78,6 +82,11 @@
 			background-image: url(../images/mockup.png);
 			background-size: cover;
 			background-repeat: no-repeat;
+
+			@include breakpoint-up("sm") {
+				width: 460px;
+				height: 275px;
+			}
 
 			@include breakpoint-up("md") {
 				width: 350px;

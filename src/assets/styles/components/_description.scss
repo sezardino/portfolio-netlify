@@ -1,7 +1,4 @@
 .description {
-	@include breakpoint-up("lg") {
-		padding-top: 70px;
-	}
 	&__title {
 		display: none;
 		@include breakpoint-up("md") {
@@ -62,7 +59,6 @@
 
 	&__text {
 		margin-top: 15px;
-		height: 3px;
 		margin-bottom: 15px;
 	}
 

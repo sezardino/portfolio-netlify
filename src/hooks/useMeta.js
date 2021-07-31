@@ -1,9 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { useEffect } from "react";
 
 const query = graphql`
 	query MyQuery {
-		markdownRemark(fileAbsolutePath: { regex: "/site/" }) {
+		markdownRemark(fileAbsolutePath: { regex: "/settings/site/" }) {
 			frontmatter {
 				siteName
 				siteDesc

@@ -1,18 +1,13 @@
-import React from "react";
-import "../assets/styles/main.scss";
-
-import Seo from "../components/parts/seo";
-import Header from "../components/parts/header";
-import Footer from "../components/parts/footer";
+import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { useEffect } from "react";
-import { useState } from "react";
 
-const getMenuData = (menu, index) => {
-	const next = menu[index + 1 >= menu.length ? 0 : index + 1];
-	const prev = menu[index - 1 < 0 ? menu.length - 1 : index - 1];
-	return { prev, next };
-};
+import Seo from "@/components/seo";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
+import { getMenuData } from "@/utils";
+
+import "@/assets/styles/main.scss";
 
 const Layout = ({ children, seo }) => {
 	const data = useStaticQuery(query);
