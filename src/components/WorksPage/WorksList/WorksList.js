@@ -14,7 +14,7 @@ const WorksList = ({ works, className, handler }) => {
 				{works.map(({ name, mockup }) => {
 					return (
 						<li className="portfolio__item" key={name}>
-							<Link className="portfolio__link" to={"#" + name} onClick={() => handler(name)}>
+							<Link className="portfolio__link" to={"#" + name.replaceAll(' ', '-')} onClick={() => handler(name)}>
 								<img className="portfolio__img" src={mockup.childImageSharp.fluid.src} alt={name} />
 							</Link>
 						</li>

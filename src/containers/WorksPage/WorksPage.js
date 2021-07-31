@@ -19,7 +19,7 @@ const Works = ({ props, works }) => {
 	};
 
 	useEffect(() => {
-		const hash = window.location.hash?.slice(1);
+		const hash = window.location.hash?.slice(1).replaceAll('-', ' ');
 		if (hash) {
 			worksHandler(hash);
 		}

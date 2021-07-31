@@ -11,9 +11,11 @@ const WorksPage = ({ data }) => {
 	const pageProps = { html: pageData.html, ...pageData.frontmatter };
 	const works = transformWorksData(worksData.edges);
 
+	const worksList = pageProps.projects.map((item) => works.find((work) => work.name === item));
+
 	return (
 		<Layout seo={pageProps.seo}>
-			<Works props={pageProps} works={works} />
+			<Works props={pageProps} works={worksList} />
 		</Layout>
 	);
 };
@@ -24,6 +26,7 @@ const query = graphql`
 			html
 			frontmatter {
 				screenTitle
+				projects
 				seo {
 					description
 					title
