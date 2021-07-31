@@ -21,20 +21,11 @@ const works = {
 				name: "projects",
 				widget: "relation",
 				collection: "projects",
-				search_fields: ["title", "mockup"],
+				search_fields: ["title"],
 				value_field: "title",
 				display_fields: ["title"],
 			},
 		},
-		// {
-		// 	label: "Projects",
-		// 	name: "projects",
-		// 	widget: "relation",
-		// 	collection: "projects",
-		// 	search_fields: ["title"],
-		// 	value_field: "title",
-		// 	display_fields: ["title"],
-		// },
 	],
 };
 
