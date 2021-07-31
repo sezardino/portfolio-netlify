@@ -23,7 +23,7 @@ const works = {
 				collection: "projects",
 				search_fields: ["title"],
 				value_field: "title",
-				display_fields: ["title"],
+				display_fields: ["title", "mockup"],
 			},
 		},
 		// {
