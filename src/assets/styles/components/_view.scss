@@ -111,6 +111,12 @@
 				max-width: 248px;
 				max-height: 156px;
 
+				@include breakpoint-up("sm") {
+					top: 9px;
+					left: 41px;
+					max-width: 383px;
+					max-height: 239px;
+				}
 				@include breakpoint-up("md") {
 					top: 7px;
 					left: 32px;

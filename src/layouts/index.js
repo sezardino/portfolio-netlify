@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Seo from "@/components/seo";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import { getMenuData } from "@/utils";
 
