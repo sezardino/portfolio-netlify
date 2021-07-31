@@ -2,8 +2,8 @@
 title: Distance
 mockup: unnamed.jpg
 projectImages:
-  desktopImage: unnamed.jpg
-  mobileImage: unnamed.jpg
+  desktopImage: sezardino-distance.netlify.app_-1-.png
+  mobileImage: ""
 projectLinks:
   repository: view
   view: view
