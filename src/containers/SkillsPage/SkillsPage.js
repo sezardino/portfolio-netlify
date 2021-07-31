@@ -1,7 +1,7 @@
 import React from "react";
 
-import PageTitle from "@/components/PageTitle";
-import SkillsList from "@/components/SkillsPage/SkillsList/SkillsList";
+import PageTitle from "../../components/PageTitle";
+import SkillsList from "../../components/SkillsPage/SkillsList/SkillsList";
 
 const Skills = ({ props }) => {
 	const { screenTitle, infoText, skillsList } = props;

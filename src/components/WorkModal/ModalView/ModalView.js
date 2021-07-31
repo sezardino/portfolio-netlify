@@ -1,7 +1,7 @@
 import React, { useState, createRef } from "react";
-import desktopIcon from "@/assets/images/desktop.svg";
-import mobileIcon from "@/assets/images/mobile.svg";
-import useScroll from "@/hooks/useScroll";
+import desktopIcon from "../../../assets/images/desktop.svg";
+import mobileIcon from "../../../assets/images/mobile.svg";
+import useScroll from "../../../hooks/useScroll";
 
 const ModalView = ({ data, classes }) => {
 	const viewRef = createRef(null);

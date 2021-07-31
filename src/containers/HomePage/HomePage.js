@@ -1,6 +1,6 @@
 import React from "react";
 
-import HomeWrapper from "@/components/HomePage/HomeWrapper";
+import HomeWrapper from "../../components/HomePage/HomeWrapper";
 
 const Home = ({ props }) => {
 	const { image, screenTitle, subtitle, title } = props;

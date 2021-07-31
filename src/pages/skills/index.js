@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "@/layouts";
-import Skills from "@/containers/SkillsPage";
+import Layout from "../../layouts";
+import Skills from "../../containers/SkillsPage";
 
 const SkillsPage = ({ data }) => {
 	const { screenTitle, infoText, skillsList, seo } = data.markdownRemark.frontmatter;

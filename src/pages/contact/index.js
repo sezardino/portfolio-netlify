@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "@/layouts";
-import Contact from "@/containers/ContactPage";
+import Layout from "../../layouts";
+import Contact from "../../containers/ContactPage";
 
 
 const ContactPage = ({ data }) => {

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import WorksList from "@/components/WorksPage/WorksList";
-import PageTitle from "@/components/PageTitle";
-import WorkModal from "@/containers/WorkModal";
+import WorksList from "../../components/WorksPage/WorksList";
+import PageTitle from "../../components/PageTitle";
+import WorkModal from "../../containers/WorkModal";
 
 const Works = ({ props, works }) => {
 	const { html, screenTitle } = props;
@@ -19,7 +19,7 @@ const Works = ({ props, works }) => {
 	};
 
 	useEffect(() => {
-		const hash = window.location.hash?.slice(1).replaceAll('-', ' ');
+		const hash = window.location.hash?.slice(1);
 		if (hash) {
 			worksHandler(hash);
 		}

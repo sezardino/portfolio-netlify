@@ -1,7 +1,7 @@
 import React from "react";
 
-import ContactInfo from "@/components/ContactPage/ContactInfo";
-import SocialInfo from "@/components/ContactPage/SocialInfo";
+import ContactInfo from "../../components/ContactPage/ContactInfo";
+import SocialInfo from "../../components/ContactPage/SocialInfo";
 
 const Contact = ({ props }) => {
 	const { title, socialMedia, contactInfo } = props;

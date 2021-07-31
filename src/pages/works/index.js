@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "@/layouts";
-import Works from "@/containers/WorksPage";
+import Layout from "../../layouts";
+import Works from "../../containers/WorksPage";
 
-import { transformWorksData } from "@/utils";
+import { transformWorksData } from "../../utils";
 
 const WorksPage = ({ data }) => {
 	const { allMarkdownRemark: worksData, markdownRemark: pageData } = data;
