@@ -2,7 +2,7 @@
 title: Barber
 mockup: barber_mockup.jpg
 projectImages:
-  desktopImage: barber_desktop.png
+  desktopImage: ""
   mobileImage: null
 projectLinks:
   repository: repo
