@@ -6,6 +6,16 @@ seo:
 screenTitle:
   - Portf
   - olio
-projects: []
+projects:
+  - Art
+  - AskMe
+  - Barber
+  - Bookmark
+  - Crypto
+  - Delivery
+  - Digital
+  - Distance
+  - English for kids
+  - Filmed
 ---
 Want to see more my projects, you can see on my [GitHub reposytory](https://github.com/sezardino)
