@@ -7,6 +7,7 @@ screenTitle:
   - Portf
   - olio
 projects:
+  - Netcliks
   - Art
   - AskMe
   - Barber
@@ -24,7 +25,6 @@ projects:
   - Keksogram
   - Landscape
   - Match game
-  - Netcliks
   - Personal Trainer Website
   - Photo Filter
   - Sound App
