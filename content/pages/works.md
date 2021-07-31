@@ -20,7 +20,6 @@ projects:
   - Filmed
   - Finance
   - Food
-  - Food
   - Gatsby starter
   - Keksogram
   - Landscape
