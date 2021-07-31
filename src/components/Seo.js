@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import useImages from "../../hooks/useImages";
-import useMeta from "../../hooks/useMeta";
+import useImages from "../hooks/useImages";
+import useMeta from "../hooks/useMeta";
 
 const Seo = ({ data }) => {
 	const { appleIcon, fav16, fav32 } = useImages();

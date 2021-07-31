@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import Link from "../Link";
-import Logo from "../Logo";
+import Link from "./Link";
+import Logo from "./Logo";
 
 const Header = ({ menu }) => {
 	const [menuOpen, setMenuOpen] = useState(false);

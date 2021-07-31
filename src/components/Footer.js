@@ -1,6 +1,6 @@
 import React from "react";
 
-import Link from "../Link";
+import Link from "./Link";
 
 const Footer = ({ menu, links }) => {
 	const { next, prev, current } = links;
