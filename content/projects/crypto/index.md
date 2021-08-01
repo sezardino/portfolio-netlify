@@ -5,6 +5,6 @@ projectImages:
   desktopImage: unnamed.jpg
   mobileImage: unnamed.jpg
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/Crypto
+  view: https://app.netlify.com/sites/sezardino-crypto/overview
 ---
