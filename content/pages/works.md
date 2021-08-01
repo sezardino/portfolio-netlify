@@ -11,7 +11,6 @@ projects:
   - Art
   - Barber
   - Bookmark
-  - Crypto
   - Delivery
   - Digital
   - Distance
