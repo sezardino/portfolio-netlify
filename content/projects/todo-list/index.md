@@ -2,10 +2,10 @@
 title: ToDo List
 mockup: todo_mockup.jpg
 projectImages:
-  desktopImage: todo.jpg
+  desktopImage: sezardino-todo.netlify.app_.png
 projectLinks:
-  repository: repo
-  view: link
+  repository: https://github.com/sezardino/todo-typescript
+  view: https://sezardino-todo.netlify.app/
 technologies:
   - technology: Html
   - technology: Css
