@@ -1,6 +1,6 @@
 ---
 title: Match game
-mockup: unnamed.jpg
+mockup: frame-90.png
 projectImages:
   desktopImage: sezardino-match-game.netlify.app_.png
   mobileImage: ""
