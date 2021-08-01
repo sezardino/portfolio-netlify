@@ -1,6 +1,6 @@
 ---
 title: Personal Trainer Website
-mockup: unnamed.jpg
+mockup: frame-99.png
 projectImages:
   desktopImage: sezardino-trainer.netlify.app_-1-.png
   mobileImage: sezardino-trainer.netlify.app_.png
