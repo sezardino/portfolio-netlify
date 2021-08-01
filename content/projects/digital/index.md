@@ -5,6 +5,6 @@ projectImages:
   desktopImage: digital_desctop.png
   mobileImage: digital_mobile.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/PSD-Templates/tree/master/Digital
+  view: https://sezardino.github.io/PSD-Templates/Digital/
 ---
