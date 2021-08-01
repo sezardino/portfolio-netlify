@@ -23,5 +23,6 @@ projects:
   - Sound App
   - Space
   - StarDB
+  - ToDo List
 ---
 Want to see more my projects, you can see on my [GitHub reposytory](https://github.com/sezardino)
