@@ -4,6 +4,6 @@ mockup: filmed_mockup.jpg
 projectImages:
   desktopImage: filmed_desktop.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/FilmEd
+  view: https://sezardino-filmed.netlify.app/
 ---
