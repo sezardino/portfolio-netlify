@@ -21,5 +21,6 @@ projects:
   - Personal Trainer Website
   - Photo Filter
   - Sound App
+  - Space
 ---
 Want to see more my projects, you can see on my [GitHub reposytory](https://github.com/sezardino)
