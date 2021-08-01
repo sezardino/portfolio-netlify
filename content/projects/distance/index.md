@@ -1,6 +1,6 @@
 ---
 title: Distance
-mockup: unnamed.jpg
+mockup: frame-89.png
 projectImages:
   desktopImage: sezardino-distance.netlify.app_-1-.png
   mobileImage: ""
