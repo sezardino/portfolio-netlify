@@ -24,5 +24,6 @@ projects:
   - Space
   - StarDB
   - ToDo List
+  - Windows
 ---
 Want to see more my projects, you can see on my [GitHub reposytory](https://github.com/sezardino)
