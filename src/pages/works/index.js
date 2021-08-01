@@ -32,7 +32,7 @@ const query = graphql`
 					title
 					image {
 						childImageSharp {
-							fluid(quality: 100, maxHeight: 200) {
+							fluid(quality: 70, maxHeight: 200) {
 								src
 							}
 						}
@@ -48,7 +48,7 @@ const query = graphql`
 						title
 						mockup {
 							childImageSharp {
-								fluid(quality: 100) {
+								fluid(quality: 70) {
 									src
 								}
 							}
@@ -56,14 +56,14 @@ const query = graphql`
 						projectImages {
 							desktopImage {
 								childImageSharp {
-									fluid(quality: 100) {
+									fluid(quality: 70) {
 										src
 									}
 								}
 							}
 							mobileImage {
 								childImageSharp {
-									fluid(quality: 100) {
+									fluid(quality: 70) {
 										src
 									}
 								}
