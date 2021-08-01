@@ -9,7 +9,6 @@ screenTitle:
 projects:
   - Netcliks
   - Art
-  - AskMe
   - Barber
   - Bookmark
   - Crypto
