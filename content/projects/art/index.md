@@ -6,6 +6,6 @@ order: 1
 projectImages:
   desktopImage: art_desktop.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/Art
+  view: https://sezardino-art.netlify.app/
 ---
