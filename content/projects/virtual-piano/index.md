@@ -1,6 +1,6 @@
 ---
 title: Virtual Piano
-mockup: unnamed.jpg
+mockup: frame-93.png
 projectImages:
   desktopImage: sezardino-virtual-piano.netlify.app_.png
   mobileImage: ""
