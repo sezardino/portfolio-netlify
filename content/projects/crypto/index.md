@@ -1,9 +1,9 @@
 ---
 title: Crypto
-mockup: unnamed.jpg
+mockup: frame-96.png
 projectImages:
-  desktopImage: unnamed.jpg
-  mobileImage: unnamed.jpg
+  desktopImage: ""
+  mobileImage: ""
 projectLinks:
   repository: https://github.com/sezardino/Crypto
   view: https://sezardino-crypto.netlify.app/
