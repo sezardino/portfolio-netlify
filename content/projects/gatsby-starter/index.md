@@ -5,6 +5,6 @@ projectImages:
   desktopImage: unnamed.jpg
   mobileImage: unnamed.jpg
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/gatsby-starter
+  view: https://sezardino-gatsby-starter.netlify.app/
 ---
