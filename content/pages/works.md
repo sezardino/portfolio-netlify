@@ -11,7 +11,6 @@ projects:
   - Art
   - Barber
   - Bookmark
-  - Delivery
   - Digital
   - Distance
   - English for kids
