@@ -1,6 +1,6 @@
 ---
 title: WildLife
-mockup: unnamed.jpg
+mockup: frame-94.png
 projectImages:
   desktopImage: sezardino-wildlife.netlify.app_.png
   mobileImage: ""
