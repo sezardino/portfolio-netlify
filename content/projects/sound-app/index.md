@@ -1,6 +1,6 @@
 ---
 title: Sound App
-mockup: unnamed.jpg
+mockup: frame-92.png
 projectImages:
   desktopImage: sezardino-sound-app.netlify.app_.png
   mobileImage: ""
