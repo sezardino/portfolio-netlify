@@ -111,16 +111,26 @@
 		border-radius: 2px;
 
 		position: absolute;
-		top: 100%;
-		left: 0;
-		z-index: 2;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
 
-		max-width: 100%;
+		z-index: 2;
+		max-width: 200px;
+
+		@include breakpoint-up('sm') {
+			max-width: 400px;
+		}
+		@include breakpoint-up('md') {
+			max-width: 100%;
+			right: -50%;
+		}
 	}
 
 	&__item-info {
-		font-size: 1.5rem;
-		line-height: 1.6rem;
+		font-family: "Montserrat", sans-serif;
+		font-size: 1.7rem;
+		line-height: 2.1rem;
 		color: #1d1d1d;
 		font-weight: 600;
 	}
