@@ -5,6 +5,6 @@ projectImages:
   desktopImage: windows_desktop.png
   mobileImage: windows_mobile.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/Windows
+  view: https://sezardino-windows.netlify.app/
 ---
