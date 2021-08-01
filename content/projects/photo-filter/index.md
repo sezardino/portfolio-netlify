@@ -1,6 +1,6 @@
 ---
 title: Photo Filter
-mockup: unnamed.jpg
+mockup: frame-91.png
 projectImages:
   desktopImage: sezardino-photo-filter.netlify.app_.png
   mobileImage: ""
