@@ -5,8 +5,8 @@ projectImages:
   desktopImage: netcliks_desctop.png
   mobileImage: netcliks_mobile.png
 projectLinks:
-  repository: repo
-  view: view
+  repository: https://github.com/sezardino/Netclicks
+  view: https://sezardino-netclicks.netlify.app/
 technologies:
   - technology: HTML
   - technology: CSS
