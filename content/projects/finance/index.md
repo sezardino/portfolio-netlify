@@ -1,6 +1,6 @@
 ---
 title: Finance
-mockup: unnamed.jpg
+mockup: frame-87.png
 projectImages:
   desktopImage: sezardino-finance.netlify.app_.png
   mobileImage: ""
