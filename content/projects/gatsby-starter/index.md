@@ -1,9 +1,9 @@
 ---
 title: Gatsby starter
-mockup: unnamed.jpg
+mockup: frame-95.png
 projectImages:
   desktopImage: unnamed.jpg
-  mobileImage: unnamed.jpg
+  mobileImage: ""
 projectLinks:
   repository: https://github.com/sezardino/gatsby-starter
   view: https://sezardino-gatsby-starter.netlify.app/
