@@ -1,6 +1,6 @@
 ---
 title: English for kids
-mockup: unnamed.jpg
+mockup: frame-98.png
 projectImages:
   desktopImage: for-kids-edu.netlify.app_-1-.png
   mobileImage: for-kids-edu.netlify.app_.png
