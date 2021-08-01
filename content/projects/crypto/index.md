@@ -2,7 +2,7 @@
 title: Crypto
 mockup: frame-96.png
 projectImages:
-  desktopImage: ""
+  desktopImage: unnamed.jpg
   mobileImage: ""
 projectLinks:
   repository: https://github.com/sezardino/Crypto
