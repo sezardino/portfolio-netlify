@@ -5,6 +5,6 @@ projectImages:
   desktopImage: star-wars_desk.png
   mobileImage: star-wars_mob.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/StarDB
+  view: https://sezardino-star-db.netlify.app/
 ---
