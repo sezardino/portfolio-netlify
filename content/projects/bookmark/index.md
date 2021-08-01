@@ -5,6 +5,6 @@ projectImages:
   desktopImage: bookmark_desktop.png
   mobileImage: bookmark_mobile.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/Bookmark
+  view: https://sezardino-bookmark.netlify.app/
 ---
