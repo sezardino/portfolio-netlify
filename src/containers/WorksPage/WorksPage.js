@@ -25,6 +25,19 @@ const Works = ({ props, works }) => {
 		}
 	}, []);
 
+	useEffect(() => {
+		const body = document.querySelector("body");
+		if (currentWork) {
+			window.scrollTo(0, 0);
+			body.style.overflow = "hidden";
+		} else {
+			body.style.overflow = "";
+		}
+		return () => {
+			body.style.overflow = "";
+		};
+	}, [currentWork]);
+
 	return (
 		<section className="portfolio container">
 			<PageTitle classes="title--portfolio portfolio__title" title={screenTitle} />

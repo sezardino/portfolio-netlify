@@ -32,7 +32,7 @@ const Layout = ({ children, seo }) => {
 			<Header menu={menuList} />
 			<Seo data={seo} />
 			<main>{children}</main>
-			{seo && <Footer menu={menuList} links={links} />}
+			<Footer menu={menuList} links={links} />
 		</>
 	);
 };
