@@ -2,9 +2,9 @@
 title: Virtual Piano
 mockup: unnamed.jpg
 projectImages:
-  desktopImage: unnamed.jpg
-  mobileImage: unnamed.jpg
+  desktopImage: sezardino-virtual-piano.netlify.app_.png
+  mobileImage: ""
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/virtual-piano
+  view: https://sezardino-virtual-piano.netlify.app/
 ---
