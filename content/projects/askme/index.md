@@ -1,9 +1,9 @@
 ---
 title: AskMe
-mockup: unnamed.jpg
+mockup: frame-97.png
 projectImages:
-  desktopImage: unnamed.jpg
-  mobileImage: unnamed.jpg
+  desktopImage: ""
+  mobileImage: ""
 projectLinks:
   repository: view
   view: view
