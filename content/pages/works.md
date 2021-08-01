@@ -14,7 +14,6 @@ projects:
   - Digital
   - Distance
   - English for kids
-  - Filmed
   - Finance
   - Food
   - Gatsby starter
