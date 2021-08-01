@@ -6,5 +6,5 @@ projectImages:
   mobileImage: delivery_mobile.png
 projectLinks:
   repository: https://github.com/sezardino/Delivery
-  view: https://priceless-blackwell-f7d6bd.netlify.app/
+  view: https://sezardino-delivery.netlify.app/
 ---
