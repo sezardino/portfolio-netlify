@@ -5,6 +5,6 @@ projectImages:
   desktopImage: keksogram_desktop.png
   mobileImage: keksogram_mobile.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/Keksogram
+  view: https://sezardino-keksogram.netlify.app/
 ---
