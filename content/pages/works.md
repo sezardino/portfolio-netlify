@@ -15,7 +15,6 @@ projects:
   - Distance
   - English for kids
   - Finance
-  - Gatsby starter
   - Keksogram
   - Landscape
   - Match game
