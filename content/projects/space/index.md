@@ -5,6 +5,6 @@ projectImages:
   desktopImage: space_desktop.png
   mobileImage: space_mobile.png
 projectLinks:
-  repository: view
-  view: view
+  repository: https://github.com/sezardino/PSD-Templates/tree/master/SpaceY
+  view: https://sezardino.github.io/PSD-Templates/SpaceY/#
 ---
