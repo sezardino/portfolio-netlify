@@ -12,4 +12,5 @@ technologies:
   - technology: Redux
   - technology: HTML5
   - technology: CSS/SCSS
+  - technology: Firebase
 ---
