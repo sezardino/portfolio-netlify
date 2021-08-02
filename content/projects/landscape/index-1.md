@@ -7,4 +7,9 @@ projectImages:
 projectLinks:
   repository: https://github.com/sezardino/Landscape
   view: https://sezardino-landscape.netlify.app/
+technologies:
+  - technology: HTML5
+  - technology: CSS/SCSS
+  - technology: JavaScript
+  - technology: OOP
 ---
