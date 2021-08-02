@@ -11,5 +11,6 @@ technologies:
   - technology: HTML
   - technology: CSS
   - technology: JS
+  - technology: Webpack 5
+  - technology: OOP
 ---
-dadawdadaw
