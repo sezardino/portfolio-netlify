@@ -7,4 +7,8 @@ projectImages:
 projectLinks:
   repository: https://github.com/sezardino/Keksogram
   view: https://sezardino-keksogram.netlify.app/
+technologies:
+  - technology: HTML
+  - technology: CSS
+  - technology: JS ES5
 ---
