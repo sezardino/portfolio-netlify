@@ -7,25 +7,25 @@ screenTitle:
   - Portf
   - olio
 projects:
-  - Netcliks
-  - Art
+  - StarDB
   - Barber
   - Bookmark
-  - Digital
-  - Distance
+  - Netcliks
   - English for kids
   - Finance
-  - Keksogram
-  - Landscape
   - Match game
-  - Personal Trainer Website
-  - Photo Filter
   - Sound App
+  - Photo Filter
   - Space
-  - StarDB
   - ToDo List
-  - Windows
-  - WildLife
   - Virtual Piano
+  - Art
+  - WildLife
+  - Personal Trainer Website
+  - Keksogram
+  - Digital
+  - Distance
+  - Landscape
+  - Windows
 ---
 Want to see more my projects, you can see on my [GitHub reposytory](https://github.com/sezardino)
