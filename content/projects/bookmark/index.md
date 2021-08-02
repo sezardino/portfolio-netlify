@@ -9,7 +9,7 @@ projectLinks:
   view: https://sezardino-bookmark.netlify.app/
 technologies:
   - technology: HTML5
-  - technology: CSS
+  - technology: CSS/SCSS
   - technology: JavaScript
   - technology: React
   - technology: Redux
