@@ -7,4 +7,8 @@ projectImages:
 projectLinks:
   repository: https://github.com/sezardino/PSD-Templates/tree/master/Digital
   view: https://sezardino.github.io/PSD-Templates/Digital/
+technologies:
+  - technology: HTML5
+  - technology: CSS
+  - technology: Webpack 5
 ---
