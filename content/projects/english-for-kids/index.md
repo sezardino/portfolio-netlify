@@ -7,4 +7,10 @@ projectImages:
 projectLinks:
   repository: https://github.com/sezardino/English-for-kids
   view: https://for-kids-edu.netlify.app/
+technologies:
+  - technology: Vue
+  - technology: Vuex
+  - technology: Router
+  - technology: HTML5
+  - technology: CSS
 ---
