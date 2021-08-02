@@ -4,18 +4,16 @@ import { graphql } from "gatsby";
 import Layout from "../../layouts";
 import Works from "../../containers/WorksPage";
 
-import { transformWorksData } from "../../utils";
+import useWorks from "../../hooks/useWorks";
 
 const WorksPage = ({ data }) => {
 	const { allMarkdownRemark: worksData, markdownRemark: pageData } = data;
 	const pageProps = { html: pageData.html, ...pageData.frontmatter };
-	const works = transformWorksData(worksData.edges);
-
-	const worksList = pageProps.projects.map((item) => works.find((work) => work.name === item));
+	const works = useWorks(pageProps.projects);
 
 	return (
 		<Layout seo={pageProps.seo}>
-			<Works props={pageProps} works={worksList} />
+			<Works props={pageProps} works={works} />
 		</Layout>
 	);
 };
@@ -35,46 +33,6 @@ const query = graphql`
 							fluid(quality: 70, maxHeight: 200) {
 								src
 							}
-						}
-					}
-				}
-			}
-		}
-		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
-			edges {
-				node {
-					html
-					frontmatter {
-						title
-						mockup {
-							childImageSharp {
-								fluid(quality: 70) {
-									src
-								}
-							}
-						}
-						projectImages {
-							desktopImage {
-								childImageSharp {
-									fluid(quality: 70) {
-										src
-									}
-								}
-							}
-							mobileImage {
-								childImageSharp {
-									fluid(quality: 70) {
-										src
-									}
-								}
-							}
-						}
-						projectLinks {
-							repository
-							view
-						}
-						technologies {
-							technology
 						}
 					}
 				}
