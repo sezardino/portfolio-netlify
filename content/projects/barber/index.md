@@ -9,7 +9,7 @@ projectLinks:
   view: https://sezardino-barber.netlify.app/
 technologies:
   - technology: HTML
-  - technology: CSS
+  - technology: CSS/SCSS
   - technology: JS
   - technology: Webpack 5
   - technology: OOP
