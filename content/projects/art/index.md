@@ -10,7 +10,6 @@ projectLinks:
   view: https://sezardino-art.netlify.app/
 technologies:
   - technology: HTML
-  - technology: CSS
-  - technology: Less
+  - technology: CSS/Less
   - technology: JavaScript
 ---
