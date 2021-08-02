@@ -9,7 +9,7 @@ projectLinks:
   view: https://sezardino-delivery.netlify.app/
 technologies:
   - technology: HTML5
-  - technology: CSS
+  - technology: CSS/SCSS
   - technology: JS
   - technology: OOP
 ---
