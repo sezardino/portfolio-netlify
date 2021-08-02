@@ -7,4 +7,9 @@ projectImages:
 projectLinks:
   repository: https://github.com/sezardino/personal-trainer-website
   view: https://sezardino-trainer.netlify.app/
+technologies:
+  - technology: Gatsby
+  - technology: React
+  - technology: CSS/SCSS
+  - technology: HTML5
 ---
