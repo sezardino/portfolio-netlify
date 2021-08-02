@@ -7,4 +7,8 @@ projectImages:
 projectLinks:
   repository: https://github.com/sezardino/Windows
   view: https://sezardino-windows.netlify.app/
+technologies:
+  - technology: HTML
+  - technology: CSS
+  - technology: JavaScript
 ---
