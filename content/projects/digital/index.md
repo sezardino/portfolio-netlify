@@ -9,6 +9,6 @@ projectLinks:
   view: https://sezardino.github.io/PSD-Templates/Digital/
 technologies:
   - technology: HTML5
-  - technology: CSS
+  - technology: CSS/SCSS
   - technology: Webpack 5
 ---
