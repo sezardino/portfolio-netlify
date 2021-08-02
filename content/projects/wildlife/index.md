@@ -3,7 +3,7 @@ title: WildLife
 mockup: frame-94.png
 projectImages:
   desktopImage: sezardino-wildlife.netlify.app_.png
-  mobileImage: ""
+
 projectLinks:
   repository: https://github.com/sezardino/wildlife
   view: https://sezardino-wildlife.netlify.app/

@@ -8,7 +8,7 @@ const ModalView = ({ data, classes }) => {
 	const { desktop, mobile, name } = data;
 	const scrollPosition = useScroll(viewRef);
 	const [view, setView] = useState(true);
-	const desktopImg = <img src={desktop.childImageSharp.fluid.src} alt={name} />;
+	const desktopImg = <img src={desktop?.childImageSharp.fluid.src} alt={name} />;
 	const mobileImg = <img src={mobile?.childImageSharp.fluid.src} alt={name} />;
 
 	return (
