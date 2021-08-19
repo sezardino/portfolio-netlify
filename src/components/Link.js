@@ -1,5 +1,5 @@
 import React from "react";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Link as GatsbyLink } from "gatsby";
 
 const Link = ({ slug, handler, label, hidden = false, classes = "", activeClass = "" }) => {
 	const clickHandler = () => {
@@ -9,16 +9,9 @@ const Link = ({ slug, handler, label, hidden = false, classes = "", activeClass 
 	};
 
 	return (
-		<AniLink
-			cover
-			bg="#1d1d1d"
-			to={"/" + slug}
-			activeClassName={activeClass}
-			className={classes}
-			onClick={clickHandler}
-		>
+		<GatsbyLink to={"/" + slug} activeClassName={activeClass} className={classes} onClick={clickHandler}>
 			{hidden ? <span className="hidden">{label}</span> : label}
-		</AniLink>
+		</GatsbyLink>
 	);
 };
 

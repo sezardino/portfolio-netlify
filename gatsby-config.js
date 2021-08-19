@@ -10,7 +10,6 @@ module.exports = {
 		"gatsby-plugin-sharp",
 		"gatsby-plugin-react-helmet",
 		"gatsby-transformer-sharp",
-		"gatsby-plugin-transition-link",
 		{
 			resolve: "gatsby-source-filesystem",
 			options: {
@@ -45,13 +44,6 @@ module.exports = {
 			options: {
 				manualInit: true,
 				modulePath: `${__dirname}/src/cms/cms.js`,
-			},
-		},
-		{
-			resolve: `gatsby-plugin-portal`,
-			options: {
-				key: "portal",
-				id: "portal",
 			},
 		},
 		"gatsby-plugin-netlify",

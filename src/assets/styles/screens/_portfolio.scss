@@ -66,6 +66,10 @@
 			overflow: scroll;
 			max-height: 377px;
 		}
+		@include breakpoint-up("xxl") {
+			grid-template-columns: repeat(3, minmax(156px, 1fr));
+			max-height: 504px;
+		}
 	}
 
 	&__item {

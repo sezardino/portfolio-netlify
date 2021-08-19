@@ -1,6 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { graphql, Link, useStaticQuery } from "gatsby";
 
 const query = graphql`
 	query {
@@ -22,9 +21,9 @@ const Logo = () => {
 	const logo = data.markdownRemark.frontmatter.logo;
 
 	return (
-		<AniLink to="/" cover bg="#1d1d1d" className="logo">
+		<Link to="/" className="logo">
 			<img src={logo.image.publicURL} alt={logo.alt} />
-		</AniLink>
+		</Link>
 	);
 };
 

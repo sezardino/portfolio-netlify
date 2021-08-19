@@ -3,17 +3,17 @@ import { Link } from "gatsby";
 
 import useScroll from "../../../hooks/useScroll";
 
-const WorksList = ({ works, className, handler }) => {
+const WorksList = ({ works, className }) => {
 	const listRef = createRef(null);
 	const scrollPosition = useScroll(listRef);
 
 	return (
 		<div className={className}>
 			<ul className="portfolio__list" ref={listRef}>
-				{works.map(({ name, mockup }) => {
+				{works.map(({ name, mockup, slug }) => {
 					return (
-						<li className="portfolio__item" key={name}>
-							<Link className="portfolio__link" to={"#" + name} onClick={() => handler(name)}>
+						<li className="portfolio__item" key={slug}>
+							<Link className="portfolio__link" to={slug}>
 								<img className="portfolio__img" src={mockup.childImageSharp.fluid.src} alt={name} />
 							</Link>
 						</li>
