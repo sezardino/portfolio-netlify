@@ -23,5 +23,5 @@ socialMedia:
     link: https://vk.com/sezardino
   - name: Linkedin
     label: li
-    link: some
+    link: https://www.linkedin.com/in/edward-arechwa-5986971a2/
 ---
