@@ -1,15 +1,14 @@
-import React, { createRef } from "react";
+import React from "react";
 import { Link } from "gatsby";
 
 import useScroll from "../../../hooks/useScroll";
 
-const WorksList = ({ works, className }) => {
-	const listRef = createRef(null);
-	const scrollPosition = useScroll(listRef);
+const WorksList = ({ works, className }, ref) => {
+	const scrollPosition = useScroll(ref);
 
 	return (
 		<div className={className}>
-			<ul className="portfolio__list" ref={listRef}>
+			<ul className="portfolio__list" ref={ref} style={{ opacity: 0 }}>
 				{works.map(({ name, mockup, slug }) => {
 					return (
 						<li className="portfolio__item" key={slug}>
@@ -20,7 +19,7 @@ const WorksList = ({ works, className }) => {
 					);
 				})}
 			</ul>
-			<div className="scroll scroll--white portfolio__scroll">
+			<div className="scroll scroll--white portfolio__scroll" style={{ opacity: 0 }}>
 				<div className="scroll__track">
 					<div
 						className="scroll__bar"
@@ -32,4 +31,6 @@ const WorksList = ({ works, className }) => {
 	);
 };
 
-export default WorksList;
+const forwardRef = React.forwardRef(WorksList);
+
+export default forwardRef;

@@ -7,9 +7,10 @@ import Works from "../../containers/WorksPage";
 import useWorks from "../../hooks/useWorks";
 
 const WorksPage = ({ data }) => {
-	const { allMarkdownRemark: worksData, markdownRemark: pageData } = data;
+	const { markdownRemark: pageData } = data;
 	const pageProps = { html: pageData.html, ...pageData.frontmatter };
 	const works = useWorks(pageProps.projects);
+
 	return (
 		<Layout seo={pageProps.seo}>
 			<Works props={pageProps} works={works} />

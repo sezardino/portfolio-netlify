@@ -1,8 +1,8 @@
 import React from "react";
 
-const PageTitle = ({ title, classes }) => {
+const PageTitle = ({ title, classes }, ref) => {
 	return (
-		<h2 className={`title title--main ${classes}`}>
+		<h2 className={`title title--main ${classes}`} style={{ opacity: 0 }} ref={ref}>
 			{title.map((word) => {
 				return (
 					<span className="row" key={word}>
@@ -18,4 +18,6 @@ const PageTitle = ({ title, classes }) => {
 	);
 };
 
-export default PageTitle;
+const forwardRef = React.forwardRef(PageTitle);
+
+export default forwardRef;

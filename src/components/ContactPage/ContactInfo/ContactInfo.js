@@ -1,10 +1,10 @@
 import React from "react";
 
-const ContactInfo = ({ data, classes }) => {
+const ContactInfo = ({ data, classes }, ref) => {
 	return (
-		<ul className={`info ${classes}`}>
+		<ul className={`info ${classes}`} ref={ref}>
 			{data.map((item) => (
-				<li className="info__item" key={item.name}>
+				<li className="info__item" key={item.name} style={{ opacity: 0 }}>
 					<span className="info__def">{item.label}:</span>
 					<span className="info__data">{item.content}</span>
 					<a
@@ -19,4 +19,6 @@ const ContactInfo = ({ data, classes }) => {
 	);
 };
 
-export default ContactInfo;
+const forwardRef = React.forwardRef(ContactInfo);
+
+export default forwardRef;

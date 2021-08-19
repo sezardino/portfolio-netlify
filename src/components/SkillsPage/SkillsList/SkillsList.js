@@ -1,8 +1,8 @@
 import React from "react";
 
-const SkillsList = ({ skills, classes }) => {
+const SkillsList = ({ skills, classes }, ref) => {
 	return (
-		<ul className={classes}>
+		<ul className={classes} style={{ opacity: 0 }} ref={ref}>
 			{skills.map((skill) => (
 				<li className="skills__item" key={`${skill.name}${skill.level}`}>
 					<p className="skills__item-name">{skill.name}</p>
@@ -23,4 +23,6 @@ const SkillsList = ({ skills, classes }) => {
 	);
 };
 
-export default SkillsList;
+const forwardRef = React.forwardRef(SkillsList);
+
+export default forwardRef;
