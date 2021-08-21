@@ -1,11 +1,10 @@
 import React, { useRef, useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import useGsap from "../../hooks/useGsap";
 
 import WorksList from "../../components/WorksPage/WorksList";
 import PageTitle from "../../components/PageTitle";
 
-const Works = ({ props, works }) => {
+const Works = ({ props, works, location }) => {
 	const { html, screenTitle } = props;
 	const tl = useGsap();
 	const titleRef = useRef(null);
@@ -17,6 +16,12 @@ const Works = ({ props, works }) => {
 		const info = infoRef.current;
 		const list = listRef.current;
 
+		if (location.search === "?pr") {
+			tl.set([title, info, list], { opacity: 0 })
+				.to([title, list], { opacity: 1 })
+				.fromTo(title.children, { x: "+=100%", opacity: 0 }, { x: 0, opacity: 1, stagger: 0.5, duration: 1.5 });
+			return;
+		}
 		tl.set([title, info, list], { opacity: 0 })
 			.to([title, list], { opacity: 1 })
 			.fromTo(title.children, { x: "+=100%", opacity: 0 }, { x: 0, opacity: 1, stagger: 0.5, duration: 1.5 })

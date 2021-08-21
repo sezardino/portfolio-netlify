@@ -6,14 +6,14 @@ import Works from "../../containers/WorksPage";
 
 import useWorks from "../../hooks/useWorks";
 
-const WorksPage = ({ data }) => {
+const WorksPage = ({ data, location }) => {
 	const { markdownRemark: pageData } = data;
 	const pageProps = { html: pageData.html, ...pageData.frontmatter };
 	const works = useWorks(pageProps.projects);
 
 	return (
 		<Layout seo={pageProps.seo}>
-			<Works props={pageProps} works={works} />
+			<Works props={pageProps} works={works} location={location} />
 		</Layout>
 	);
 };

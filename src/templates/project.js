@@ -34,7 +34,7 @@ const ProjectTemplate = ({ data }) => {
 				<div className="popup__overlay"></div>
 				<div className=" popup__wrapper">
 					<div className="popup__container">
-						<Link to="/works/" className="popup__button"></Link>
+						<Link to="/works?pr" className="popup__button"></Link>
 						<h2 className="popup__title popup__title--mobile">{name}</h2>
 						<ModalView classes="popup__view" data={viewData} />
 						<ModalDescription classes="popup__description" data={descriptionData} />
